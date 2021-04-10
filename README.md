@@ -45,12 +45,12 @@ This is a series of pages that list the best moves for PvE (raids) and PvP:
 
 
 <!-- List of references -->
-[PvE_basic_shadow]: raid_top_ranked_PvE_basic_and_shadow_copypaste.html
-[PvE_basic]: raid_top_ranked_PvE_copypaste.html
-[PvE_shadow]: raid_top_ranked_PvE_shadow_copypaste.html
-[PvP_great]: top_ranked_great_league_PvP_copypaste.html
-[PvP_master]: top_ranked_master_league_PvP_copypaste.html
-[PvP_ultra_premier]: top_ranked_premier_ultra_league_PvP_copypaste.html
-[PvP_ultra_premier_XL]: top_ranked_premier_ultra_league_XL_PvP_copypaste.html
-[PvP_retro]: top_ranked_retro_league_PvP_copypaste.html
-[PvP_ultra]: top_ranked_ultra_league_PvP_copypaste.html
+[PvE_basic_shadow]: https://drmckenzie.github.io/raid_top_ranked_PvE_basic_and_shadow_copypaste.html
+[PvE_basic]: https://drmckenzie.github.io/raid_top_ranked_PvE_copypaste.html
+[PvE_shadow]: https://drmckenzie.github.io/raid_top_ranked_PvE_shadow_copypaste.html
+[PvP_great]: https://drmckenzie.github.io/top_ranked_great_league_PvP_copypaste.html
+[PvP_master]: https://drmckenzie.github.io/top_ranked_master_league_PvP_copypaste.html
+[PvP_ultra_premier]: https://drmckenzie.github.io/top_ranked_premier_ultra_league_PvP_copypaste.html
+[PvP_ultra_premier_XL]: https://drmckenzie.github.io/top_ranked_premier_ultra_league_XL_PvP_copypaste.html
+[PvP_retro]: https://drmckenzie.github.io/top_ranked_retro_league_PvP_copypaste.html
+[PvP_ultra]: https://drmckenzie.github.io/top_ranked_ultra_league_PvP_copypaste.html
