@@ -1,0 +1,175 @@
+Name,Type
+Acid Spray,Poison
+Aerial Ace,Flying
+Aeroblast,Flying
+Air Cutter,Flying
+Ancient Power,Rock
+Aqua Jet,Water
+Aqua Tail,Water
+Aura Sphere,Fighting
+Aurora Beam,Ice
+Avalanche,Ice
+Blast Burn,Fire
+Blaze Kick,Fire
+Blizzard,Ice
+Body Slam,Normal
+Bone Club,Ground
+Brave Bird,Flying
+Brick Break,Fighting
+Brine,Water
+Bubble Beam,Water
+Bug Buzz,Bug
+Bulldoze,Ground
+Close Combat,Fighting
+Crabhammer,Water
+Cross Chop,Fighting
+Cross Poison,Poison
+Crunch,Dark
+Crush Claw,Normal
+Dark Pulse,Dark
+Dazzling Gleam,Fairy
+Dig,Ground
+Disarming Voice,Fairy
+Discharge,Electric
+Doom Desire,Steel
+Draco Meteor,Dragon
+Dragon Claw,Dragon
+Dragon Pulse,Dragon
+Drain Punch,Fighting
+Draining Kiss,Fairy
+Drill Peck,Flying
+Drill Run,Ground
+Dynamic Punch,Fighting
+Earth Power,Ground
+Earthquake,Ground
+Energy Ball,Grass
+Fell Stinger,Bug
+Fire Blast,Fire
+Fire Punch,Fire
+Fissure,Ground
+Flame Burst,Fire
+Flame Charge,Fire
+Flame Wheel,Fire
+Flamethrower,Fire
+Flash Cannon,Steel
+Fly,Flying
+Flying Press,Fighting
+Focus Blast,Fighting
+Foul Play,Dark
+Frenzy Plant,Grass
+Frustration,Normal
+Future Sight,Psychic
+Giga Drain,Grass
+Giga Impact,Normal
+Grass Knot,Grass
+Gunk Shot,Poison
+Gyro Ball,Steel
+Heart Stamp,Psychic
+Heat Wave,Fire
+Heavy Slam,Steel
+Horn Attack,Normal
+Horn Drill,Normal
+Hurricane,Flying
+Hydro Cannon,Water
+Hydro Pump,Water
+Hyper Beam,Normal
+Hyper Fang,Normal
+Ice Beam,Ice
+Ice Punch,Ice
+Icy Wind,Ice
+Iron Head,Steel
+Last Resort,Normal
+Leaf Blade,Grass
+Leaf Storm,Grass
+Leaf Tornado,Grass
+Leech Life,Bug
+Low Sweep,Fighting
+Lunge,Bug
+Magnet Bomb,Steel
+Mega Drain,Grass
+Megahorn,Bug
+Meteor Mash,Steel
+Mirror Coat,Psychic
+Mirror Shot,Steel
+Moonblast,Fairy
+Mud Bomb,Ground
+Muddy Water,Water
+Night Shade,Ghost
+Night Slash,Dark
+Octazooka,Water
+Ominous Wind,Ghost
+Origin Pulse,Water
+Outrage,Dragon
+Overheat,Fire
+Parabolic Charge,Electric
+Payback,Dark
+Petal Blizzard,Grass
+Play Rough,Fairy
+Poison Fang,Poison
+Power Gem,Rock
+Power Whip,Grass
+Power-Up Punch,Fighting
+Precipice Blades,Ground
+Psybeam,Psychic
+Psychic,Psychic
+Psycho Boost,Psychic
+Psyshock,Psychic
+Psystrike,Psychic
+Razor Shell,Water
+Rest,Normal
+Return,Normal
+Rock Blast,Rock
+Rock Slide,Rock
+Rock Tomb,Rock
+Rock Wrecker,Rock
+Sacred Sword,Fighting
+Sand Tomb,Ground
+Scald,Water
+Seed Bomb,Grass
+Shadow Ball,Ghost
+Shadow Bone,Ghost
+Shadow Punch,Ghost
+Shadow Sneak,Ghost
+Signal Beam,Bug
+Silver Wind,Bug
+Skull Bash,Normal
+Sky Attack,Flying
+Sludge,Poison
+Sludge Bomb,Poison
+Sludge Wave,Poison
+Solar Beam,Grass
+Stomp,Normal
+Stone Edge,Rock
+Struggle,Normal
+Submission,Fighting
+Superpower,Fighting
+Surf,Water
+Swift,Normal
+Synchronoise,Psychic
+Techno Blast Normal,Normal
+Techno Blast Fire,Fire
+Techno Blast Ice,Ice
+Techno Blast Water,Water
+Techno Blast Electric,Electric
+Thunder,Electric
+Thunder Punch,Electric
+Thunderbolt,Electric
+Tri Attack,Normal
+Twister,Dragon
+V-create,Fire
+Vise Grip,Normal
+Water Pulse,Water
+Weather Ball Fire,Fire
+Weather Ball Ice,Ice
+Weather Ball Normal,Normal
+Weather Ball Water,Water
+Wild Charge,Electric
+Wrap,Normal
+Wrap (Green),Normal
+Wrap (Pink),Normal
+X-Scissor,Bug
+Zap Cannon,Electric
+Techno Blast (Burn),Fire
+Techno Blast (Chill),Ice
+Techno Blast (Douse),Water
+Techno Blast (Shock),Electric
