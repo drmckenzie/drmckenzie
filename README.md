@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-### The button to get any Pokemon you have not caught from a Calcy IV file is here:
+- The button to get any Pokemon you have not caught from a Calcy IV file is here:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/drmckenzie/drmckenzie.github.io/blob/main/notCaught.ipynb)
 
