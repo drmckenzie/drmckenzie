@@ -1,4 +1,6 @@
-# This is a tool for helping organise and sort for the game "Pokemon Go" 
+# Pokeomon Go sort tool
+
+## This is a tool for helping organise and sort your collection in the game "Pokemon Go" 
 
 ### Hi there 👋
 
