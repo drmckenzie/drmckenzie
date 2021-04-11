@@ -585,3 +585,31 @@ def makeNiceGamepressString(stringIn,strNumber):
     strOut = strNameSearch.lower()
 
     return strOut
+
+def typeAttackLookup(allData):
+    
+    import pandas as pd
+    
+    # files for type lookup:
+    fastFilename = 'bulbapedia_fast_move_type.csv'
+    chargedFilename = 'bulbapedia_special_move_type.csv'
+     
+    # load data
+    fastData = pd.read_csv(fastFilename,encoding= 'unicode_escape')
+    # rename columns                                 
+    fastData = fastData.rename(columns={'Name': 'Fast move'})
+    fastData = fastData.rename(columns={'Type': 'TypeFast'})
+    # fastData.head(5)
+     
+    chargedData = pd.read_csv(chargedFilename,encoding= 'unicode_escape')
+    # rename columns                                 
+    chargedData = chargedData.rename(columns={'Name': 'Special move'})
+    chargedData = chargedData.rename(columns={'Type': 'TypeSpecial'})
+    # chargedData.head(5)
+     
+    # match pokemon to type:
+    allData = allData.merge(fastData,how='inner')
+    allData = allData.merge(chargedData,how='inner')
+    # allData.head(5)
+    
+    return allData
