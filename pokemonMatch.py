@@ -613,3 +613,25 @@ def typeAttackLookup(allData):
     # allData.head(5)
     
     return allData
+
+def findBothAttackOfType(allData,thisType):
+    # finding Pokémon with both attack types the same
+     
+    bothTypeIDX = allData['TypeFast']==allData['TypeSpecial']
+     
+    # finding Pokémon with type of something
+    setData = allData[bothTypeIDX]
+    # print(setData)
+     
+    singleTypeIDX = setData['TypeFast']==thisType
+    setData = setData[singleTypeIDX]
+     
+    # sort by ..
+    setData.sort_values(by=["DPS^3*TDO"], inplace=True, ascending=False)
+     
+    # print(setData[["Pokemon","DPS^3*TDO"]].head(10))
+    
+    # take the best move of each pokemon
+    setData.drop_duplicates(subset=['Pokemon'], inplace=True)
+    
+    return setData
