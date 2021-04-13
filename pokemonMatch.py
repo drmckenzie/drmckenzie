@@ -250,6 +250,91 @@ def calculatePokemonWithBestMoves(calcyFilename,gamepressFilename,typeFilter,top
                                         
     return Result,gamepress
 
+def calcyImportAndReturnTopNumbers(calcyFilename,allData):
+    """ 
+    Inputs: filenames of calcyIV csv files and allData (pre-sorted DataFrame with x number of top pokemon attackers by type) 
+    Method: goes through the calcy database and matches any from the gampress
+    database that has the best attacking moves (defined by DPS^3*TDO)
+    Output: Results dataframe of matched pokemon with best moves.
+    """    
+    
+    # import csv sheet
+    import pandas as pd
+    
+    # read the csv files into dataframes
+    calcyData = pd.read_csv(calcyFilename, encoding='utf8')
+    
+    # get the data we're interested in. Name and score
+    calcy = calcyData[["Name","Nr","Fast move","Special move","Special move 2","CP","Saved","Lucky","ShadowForm"]]
+    
+    # drop those that are not saved:
+    calcy = calcy[calcy["Saved"]==1]
+    
+    #TODO do something with Geodude Normal etc.
+       
+    # rename shadow and XL to remove the quotation marks
+    #calcy['Shadow'] = calcy['Shadow'].str.replace(r'"', '')
+    
+    # rename columns                                 
+    calcy = calcy.rename(columns={'Name': 'Pokemon'})
+    calcy = calcy.rename(columns={'Nr': '#'})
+    
+    # drop any blank fast/special moves:
+    calcy = calcy[~calcy["Fast move"].str.startswith('-')]
+    calcy = calcy[~calcy["Fast move"].str.startswith(" -")]
+    calcy = calcy[~calcy["Special move"].str.startswith("-")]
+    calcy = calcy[~calcy["Special move"].str.startswith(' -')]
+    
+    # rename - whitespace. Infuriating
+    calcy['Fast move'] = calcy['Fast move'].str.replace(r'-', ' ')
+    calcy['Special move'] = calcy['Special move'].str.replace(r'-', ' ')
+    calcy['Special move 2'] = calcy['Special move 2'].str.replace(r'-', ' ')
+    
+    # move the "shadow" tag to the front rather than the back
+    calcyShadowFound = calcy['Pokemon'].str.endswith('Shadow').copy()
+    calcy['Pokemon'] = calcy['Pokemon'].str.replace(r' Shadow', '')
+    calcy.loc[calcyShadowFound,'Pokemon'] = 'str' + calcy.loc[calcyShadowFound,'Pokemon'].astype(str)
+
+    # create shadow tag
+    calcy["Shadow"] = False
+    calcy.loc[calcyShadowFound,'Shadow'] = True
+    
+    # filter for testing:
+    # calcy = calcy[calcy["Pokemon"].str.startswith('Rhyp')]
+    
+    # merge : this needs to be a 2 step process
+    Result1 = calcy.merge(allData,how='inner', on=['Pokemon',"#",'Fast move','Special move'])
+    
+    Result2 = calcy.merge(allData,how='inner', on=['Pokemon',"#",'Fast move','Special move 2'])
+    
+    # rename columns
+    Result1 = Result1.rename(columns={'Special move 2_x': 'Special move 2'})
+    Result1 = Result1.rename(columns={'Special move 2_y': 'Temp'})
+    Result2 = Result2.rename(columns={'Special move_x': 'Special move'})
+    Result2 = Result2.rename(columns={'Special move_y': 'Temp'})
+    
+    Result = pd.concat([Result1,Result2],sort=False)
+    
+    # drop the column
+    Result.drop(columns=['Temp'], inplace=True)
+    
+    # drop duplicates - WARNING, may drop some pokemon with second special moves
+    #TODO - maybe do this better??
+    Result.drop_duplicates(subset=['Pokemon','CP'], inplace=True)
+    
+    # print(Result)
+    
+    # sort by ..
+    Result.sort_values(by=['#', 'CP'], inplace=True)
+                           
+    # get the number, type and name from the lookup:
+    #PokemonNoType =  getPokemonNumberType()
+
+    # match pokemon to type:
+    #ResultType = Result.merge(PokemonNoType,how='inner', on=['Pokemon',"#"])
+                                        
+    return Result
+
 
 
 def getNoCpFromResults(Result):
