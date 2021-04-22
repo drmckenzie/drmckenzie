@@ -3,10 +3,25 @@
 <head>
 <script type="text/javascript" src="js/copyToClipboard.js"></script>
 <script type="text/javascript" src="js/sorttable.js"></script>
+<script type="text/javascript" src="js/tableFilter.js"></script>
+<style>
+#myInput {
+  background-image: url('html/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+</style>
 </head>
 <body>
 
-<table border=1 class="sortable"><tr><th>Name</th><th>#</th><th>DPS^3*TDO</th><th>Copy string</th></tr>Best Pokemon Go moves for PvE (raids) - fast & charged moves. <br>Name, Number, DPS^3*TDO  (click table header to sort) <hr><tr> 
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table border=1 class="sortable"  id="myTable"><tr><th>Name</th><th>#</th><th>DPS^3*TDO</th><th>Copy string</th></tr>Best Pokemon Go moves for PvE (raids) - fast & charged moves. <br>Name, Number, DPS^3*TDO  (click table header to sort) <hr><tr> 
  <td>Mewtwo</td> 
  <td>150</td> 
  <td>5994.3</td> 
