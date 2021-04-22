@@ -3,10 +3,25 @@
 <head>
 <script type="text/javascript" src="js/copyToClipboard.js"></script>
 <script type="text/javascript" src="js/sorttable.js"></script>
+<script type="text/javascript" src="js/tableFilter.js"></script>
+<style>
+#myInput {
+  background-image: url('html/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+</style>
 </head>
 <body>
 
-<table border=1 class="sortable"><tr><th>Name</th><th>#</th><th>Score</th><th>Copy string</th></tr>Best Pokemon Go moves for PvP (league battles) - fast, charged1 and charged2 moves. <br> filename:data//master_overall.csv<br><br>Name, Number, Score (click table header to sort) <hr> NOTE: the best charged moves are separated by a comma (OR search), this is to make sure that the copy/paste is flexible (inclusive) to help TM choice. <hr> <tr> 
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table border=1 class="sortable" id="myTable"><tr class="header"><th>Name</th><th>#</th><th>Score</th><th>Copy string</th></tr>Best Pokemon Go moves for PvP (league battles) - fast, charged1 and charged2 moves. <br> filename:data//master_overall.csv<br><br>Name, Number, Score (click table header to sort) <hr> NOTE: the best charged moves are separated by a comma (OR search), this is to make sure that the copy/paste is flexible (inclusive) to help TM choice. <hr> <tr> 
  <td>Groudon</td> 
  <td>383</td> 
  <td>94.7</td> 
