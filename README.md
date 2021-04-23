@@ -27,6 +27,10 @@ Here are some ideas to get you started:
 
 [![Open In Colab - top X PvE](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/drmckenzie/drmckenzie.github.io/blob/main/topPveByType.ipynb) <- this runs code in Google Colab
 
+- The button to run a ranking on the top x number of PvP (Go battle league) pokemon, and get the copy/paste numbers is here:
+
+[![Open In Colab - rank PvP top X](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/drmckenzie/drmckenzie.github.io/blob/main/PvPrating.ipynb) <- this runs code in Google Colab
+
 ### Pokemon copy/paste moves:
 
 This is a series of pages that list the best moves for PvE (raids) and PvP:
