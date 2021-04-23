@@ -737,4 +737,10 @@ def concatenateListOfMon(nums):
         returnString = returnString.replace(','+str(num)+'-'+str(num)+',', ','+str(num)+',')
     
     return returnString
-	
+
+def addNewIndexCol(df,colName):
+	# add index for all dataframes
+	df[colName] = int(0)
+	for i in range(len(df)):
+		df.loc[i,colName] = int(i)
+	return df	
