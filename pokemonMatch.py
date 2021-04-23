@@ -742,5 +742,5 @@ def addNewIndexCol(df,colName):
 	# add index for all dataframes
 	df[colName] = int(0)
 	for i in range(len(df)):
-		df.loc[i,colName] = int(i)
+		df.loc[i,colName] = int(i+1)
 	return df	
