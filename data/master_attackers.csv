@@ -1,0 +1,299 @@
+Pokemon,Score,Type 1,Type 2,Attack,Defense,Stamina,Stat Product,Level,Fast Move,Charged Move 1,Charged Move 2
+Melmetal,100,steel,none,190.5,162,220,6788558,40,Thunder Shock,Superpower,Rock Slide
+Togekiss,95.5,fairy,flying,189.7,183.3,168,5842416,40,Charm,Ancient Power,Flamethrower
+Palkia,93.6,water,dragon,233.1,181.8,161,6822754,40,Dragon Breath,Aqua Tail,Draco Meteor
+Snorlax,89.6,normal,none,162,145.4,272,6408030,40,Lick,Body Slam,Earthquake
+Dragonite,89.4,dragon,flying,219.7,168.3,177,6546085,40,Dragon Breath,Dragon Claw,Hurricane
+Dragonite (Shadow),88.7,dragon,flying,219.7,168.3,177,6546085,40,Dragon Breath,Dragon Claw,Hurricane
+Giratina (Origin),88.2,ghost,dragon,189.7,159.6,236,7145927,40,Shadow Claw,Shadow Ball,Ominous Wind
+Groudon,88.2,ground,none,225.2,192,173,7483094,40,Mud Shot,Earthquake,Fire Punch
+Kyogre,86.8,water,none,225.2,192,173,7483094,40,Waterfall,Surf,Blizzard
+Snorlax (Shadow),86.8,normal,none,162,145.4,272,6408030,40,Lick,Body Slam,Superpower
+Lugia,86.5,psychic,flying,164.4,256.8,197,8317578,40,Dragon Tail,Sky Attack,Aeroblast
+Zapdos,86.1,electric,flying,211.8,158.1,175,5858505,40,Thunder Shock,Drill Peck,Thunderbolt
+Giratina (Altered),83.5,ghost,dragon,159.6,189.7,236,7145927,40,Shadow Claw,Dragon Claw,Shadow Sneak
+Dialga,83.2,steel,dragon,229.2,178.6,173,7081684,40,Dragon Breath,Iron Head,Draco Meteor
+Obstagoon,81.8,dark,normal,154.1,165.2,179,4556359,40,Counter,Night Slash,Cross Chop
+Tyranitar,81.6,rock,dark,210.2,175.4,189,6970764,40,Smack Down,Crunch,Stone Edge
+Kyurem,79.5,dragon,ice,206.3,146.2,205,6182300,40,Dragon Breath,Dragon Claw,Blizzard
+Gardevoir (Shadow),78.3,psychic,fairy,199.2,166,145,4792607,40,Charm,Synchronoise,Shadow Ball
+Swampert,75.7,water,ground,176.2,150.2,189,5001546,40,Mud Shot,Hydro Cannon,Earthquake
+Zekrom,75.5,dragon,electric,229.2,178.6,173,7081684,40,Dragon Breath,Crunch,Wild Charge
+Gyarados (Shadow),75.2,water,flying,199.2,158.9,182,5757739,40,Dragon Breath,Aqua Tail,Crunch
+Reshiram,75.2,dragon,fire,229.2,178.6,173,7081684,40,Dragon Breath,Crunch,Overheat
+Ho-Oh,75,fire,flying,200.7,204.7,180,7395882,40,Incinerate,Brave Bird,Earthquake
+Heatran,73.4,fire,steel,210.2,180.2,177,6704613,40,Fire Spin,Flamethrower,Iron Head
+Gyarados,73.1,water,flying,199.2,158.9,182,5757739,40,Dragon Breath,Aqua Tail,Crunch
+Raikou,72.2,electric,none,202.3,166,175,5875993,40,Volt Switch,Wild Charge,Shadow Ball
+Magnezone,72,electric,steel,199.9,173.9,147,5110278,40,Spark,Wild Charge,Mirror Shot
+Rhyperior,70.5,ground,rock,202.3,162,210,6883306,40,Mud Slap,Rock Wrecker,Surf
+Landorus (Incarnate),69.8,ground,flying,218.1,155.7,173,5874966,40,Mud Shot,Rock Slide,Earth Power
+Gardevoir,69.1,psychic,fairy,199.2,166,145,4792607,40,Charm,Synchronoise,Shadow Ball
+Latios,69.1,dragon,psychic,223.7,179.4,162,6499969,40,Dragon Breath,Dragon Claw,Psychic
+Hydreigon,68.7,dark,dragon,214.2,160.4,178,6116026,40,Dragon Breath,Dark Pulse,Dragon Pulse
+Regirock,68.7,rock,none,153.3,256.1,162,6359833,40,Lock On,Stone Edge,Focus Blast
+Entei,68.2,fire,none,197.6,147,210,6098966,40,Fire Spin,Flame Charge,Iron Head
+Hippowdon,68,ground,none,170.7,162.8,200,5558210,40,Ice Fang,Body Slam,Earth Power
+Jirachi,67.5,steel,psychic,177.8,177.8,189,5976003,40,Confusion,Doom Desire,Psychic
+Lickilicky,67.5,normal,none,139.1,154.9,203,4373698,40,Lick,Body Slam,Shadow Ball
+Magnezone (Shadow),67.5,electric,steel,199.9,173.9,147,5110278,40,Spark,Wild Charge,Mirror Shot
+Tyranitar (Shadow),67.5,rock,dark,210.2,175.4,189,6970764,40,Smack Down,Crunch,Stone Edge
+Mewtwo (Armored),66.5,psychic,none,155.7,231.6,180,6489188,40,Confusion,Psystrike,Dynamic Punch
+Mew,65.6,psychic,none,177.8,177.8,189,5976003,40,Shadow Claw,Psyshock,Focus Blast
+Cresselia,65.1,psychic,none,132,215.8,217,6179066,40,Psycho Cut,Grass Knot,Future Sight
+Clefable,64.9,fairy,none,152.5,139.9,182,3883166,40,Charm,Meteor Mash,Moonblast
+Regigigas,64.4,normal,none,238.7,177.8,186,7893805,40,Hidden Power (Ground),Thunder,Focus Blast
+Mamoswine,63.7,ice,ground,207.1,127.2,203,5348194,40,Powder Snow,Avalanche,Bulldoze
+Tangrowth,63.5,grass,none,175.4,157.3,189,5214970,40,Vine Whip,Power Whip,Rock Slide
+Aggron,63.2,steel,rock,168.3,215,147,5319243,40,Smack Down,Stone Edge,Heavy Slam
+Virizion,63.2,grass,fighting,163.6,192.8,177,5583640,40,Quick Attack,Leaf Blade,Close Combat
+Genesect,62.5,bug,steel,211,169.1,149,5317350,40,Fury Cutter,X-Scissor,Magnet Bomb
+Mewtwo,62.1,psychic,none,248.9,155.7,180,6976430,40,Psycho Cut,Psystrike,Focus Blast
+Vaporeon,62.1,water,none,173.9,139.1,230,5562207,40,Water Gun,Aqua Tail,Last Resort
+Articuno,61.6,ice,flying,163.6,198.4,175,5678924,40,Ice Shard,Icy Wind,Hurricane
+Latias,61.6,dragon,psychic,192,206.3,162,6417203,40,Dragon Breath,Outrage,Psychic
+Machamp,61.4,fighting,none,196.8,137.5,175,4735552,40,Counter,Cross Chop,Payback
+Seismitoad,61.4,water,ground,160.4,130.4,195,4079421,40,Mud Shot,Earth Power,Muddy Water
+Lapras,61.1,water,ice,142.3,149.4,230,4887043,40,Ice Shard,Surf,Ice Beam
+Zapdos (Shadow),61.1,electric,flying,211.8,158.1,175,5858505,40,Thunder Shock,Drill Peck,Thunderbolt
+Entei (Shadow),60.9,fire,none,197.6,147,210,6098966,40,Fire Spin,Flame Charge,Iron Head
+Registeel,60.9,steel,none,124.9,237.1,162,4795980,40,Lock On,Focus Blast,Flash Cannon
+Steelix,60.9,steel,ground,128.8,226.8,154,4499603,40,Dragon Tail,Earthquake,Crunch
+Swampert (Shadow),60.9,water,ground,176.2,150.2,189,5001546,40,Mud Shot,Hydro Cannon,Earthquake
+Braviary,60.4,normal,flying,195.2,132,189,4869218,40,Air Slash,Brave Bird,Close Combat
+Milotic,60.2,water,none,163.6,184.9,182,5506068,40,Waterfall,Surf,Blizzard
+Cobalion,60,steel,fighting,163.6,192.8,177,5583640,40,Metal Claw,Sacred Sword,Stone Edge
+Excadrill,60,ground,steel,213.4,113.8,203,4929539,40,Mud Shot,Drill Run,Rock Slide
+Rayquaza,59.5,dragon,flying,236.3,146.2,180,6218697,40,Dragon Tail,Outrage,Aerial Ace
+Stoutland,59.5,normal,none,174.7,155.7,168,4568270,40,Lick,Wild Charge,Crunch
+Metagross,59.2,steel,psychic,215,192,162,6687660,40,Bullet Punch,Meteor Mash,Earthquake
+Articuno (Shadow),59,ice,flying,163.6,198.4,175,5678924,40,Ice Shard,Icy Wind,Hurricane
+Bouffalant,58.3,normal,none,166,155.7,182,4702631,40,Mud Shot,Stomp,Earthquake
+Victini,58.3,psychic,fire,177.8,177.8,189,5976003,40,Confusion,V-Create,Psychic
+Aggron (Shadow),58.1,steel,rock,168.3,215,147,5319243,40,Smack Down,Stone Edge,Heavy Slam
+Pyroar,58.1,fire,normal,186.5,129.6,169,4085324,40,Fire Fang,Flame Charge,Dark Pulse
+Poliwrath,57.1,water,fighting,155.7,157.3,175,4284906,40,Mud Shot,Dynamic Punch,Ice Punch
+Torterra,57.1,grass,ground,171.5,160.4,182,5007387,40,Razor Leaf,Frenzy Plant,Stone Edge
+Torterra (Shadow),56.7,grass,ground,171.5,160.4,182,5007387,40,Razor Leaf,Frenzy Plant,Stone Edge
+Terrakion,56.2,rock,fighting,217.3,163.6,177,6293037,40,Smack Down,Close Combat,Rock Slide
+Darmanitan (Galarian),56,ice,none,219.7,101.9,195,4367703,40,Ice Fang,Avalanche,Superpower
+Chesnaught,55.7,grass,fighting,170.7,173.1,173,5111260,40,Vine Whip,Superpower,Energy Ball
+Conkeldurr,55.7,fighting,none,203.9,136.7,195,5436062,40,Counter,Dynamic Punch,Stone Edge
+Delphox,55.7,fire,psychic,193.6,161.2,154,4807297,40,Fire Spin,Flame Charge,Psychic
+Heracross,55.5,bug,fighting,196.8,153.3,162,4887650,40,Counter,Close Combat,Megahorn
+Regice,55.5,ice,none,153.3,256.1,162,6359833,40,Lock On,Blizzard,Earthquake
+Vileplume,55.2,grass,poison,171.5,143.8,154,3798707,40,Razor Leaf,Sludge Bomb,Moonblast
+Abomasnow,55,grass,ice,152.5,136.7,175,3649433,40,Powder Snow,Weather Ball (Ice),Energy Ball
+Celebi,55,psychic,grass,177.8,177.8,189,5976003,40,Confusion,Seed Bomb,Psychic
+Garchomp,55,dragon,ground,218.1,164.4,200,7171110,40,Mud Shot,Outrage,Earthquake
+Haxorus,54.8,dragon,none,236.3,147.8,156,5447803,40,Counter,Dragon Claw,Night Slash
+Metagross (Shadow),54.8,steel,psychic,215,192,162,6687660,40,Bullet Punch,Meteor Mash,Earthquake
+Raikou (Shadow),54.8,electric,none,202.3,166,175,5875993,40,Volt Switch,Wild Charge,Shadow Ball
+Gigalith,54.5,rock,none,190.5,170.7,168,5462155,40,Smack Down,Rock Slide,Superpower
+Lucario,54.3,fighting,steel,198.4,125.7,147,3664141,40,Counter,Power-Up Punch,Shadow Ball
+Salamence,54.3,dragon,flying,230.8,144.6,182,6074203,40,Dragon Tail,Outrage,Hydro Pump
+Venusaur,54.3,grass,poison,168.3,161.2,162,4396517,40,Vine Whip,Frenzy Plant,Sludge Bomb
+Porygon-Z (Shadow),54.1,normal,none,220.5,130.4,168,4830381,40,Lock On,Tri Attack,Blizzard
+Genesect (Burn),53.8,bug,steel,211,169.1,149,5317350,40,Fury Cutter,X-Scissor,Techno Blast (Burn)
+Darkrai,53.4,dark,none,237.1,168.3,147,5866812,40,Snarl,Dark Pulse,Shadow Ball
+Porygon-Z,53.4,normal,none,220.5,130.4,168,4830381,40,Lock On,Tri Attack,Blizzard
+Slaking,53.4,normal,none,241,143,236,8137189,40,Yawn,Body Slam,Earthquake
+Lapras (Shadow),52.7,water,ice,142.3,149.4,230,4887043,40,Ice Shard,Surf,Ice Beam
+Blissey,52.4,normal,none,113.8,145.4,403,6669132,40,Pound,Psychic,Hyper Beam
+Cryogonal,52.4,ice,none,162,184.1,162,4832911,40,Ice Shard,Night Slash,Aurora Beam
+Magmortar,52.2,fire,none,207.1,147.8,154,4712459,40,Karate Chop,Fire Punch,Thunderbolt
+Hariyama,52,fighting,none,177,101.9,250,4511923,40,Counter,Close Combat,Heavy Slam
+Vileplume (Shadow),51.7,grass,poison,171.5,143.8,154,3798707,40,Razor Leaf,Sludge Bomb,Moonblast
+Moltres,51.5,fire,flying,210.2,154.9,175,5698489,40,Fire Spin,Sky Attack,Overheat
+Muk (Alolan),51.5,poison,dark,162,147.8,195,4668894,40,Snarl,Dark Pulse,Sludge Wave
+Ninetales (Alolan),51.5,ice,fairy,146.2,164.4,151,3629075,40,Powder Snow,Weather Ball (Ice),Psyshock
+Suicune,51.2,water,none,154.1,197.6,189,5754670,40,Snarl,Ice Beam,Hydro Pump
+Golem (Alolan),51,rock,electric,178.6,168.3,162,4870651,40,Volt Switch,Wild Charge,Stone Edge
+Salamence (Shadow),51,dragon,flying,230.8,144.6,182,6074203,40,Dragon Tail,Outrage,Hydro Pump
+Ursaring,51,normal,none,198.4,125.7,175,4362072,40,Shadow Claw,Close Combat,Return
+Rampardos,50.8,rock,none,245,98,184,4417588,40,Smack Down,Rock Slide,Flamethrower
+Scizor (Shadow),50.8,bug,steel,198.4,154.9,147,4516803,40,Bullet Punch,Night Slash,Iron Head
+Vanilluxe,50.8,ice,none,184.1,157.3,149,4314985,40,Frost Breath,Blizzard,Signal Beam
+Venusaur (Shadow),50.8,grass,poison,168.3,161.2,162,4396517,40,Vine Whip,Frenzy Plant,Sludge Bomb
+Machamp (Shadow),50.5,fighting,none,196.8,137.5,175,4735552,40,Counter,Cross Chop,Payback
+Abomasnow (Shadow),50.3,grass,ice,152.5,136.7,175,3649433,40,Powder Snow,Weather Ball (Ice),Energy Ball
+Bisharp,50.3,dark,steel,195.2,150.9,140,4125175,40,Snarl,Dark Pulse,X-Scissor
+Sandslash (Alolan),50.1,ice,steel,151.7,166,154,3878156,40,Powder Snow,Ice Punch,Blizzard
+Weavile (Shadow),50.1,dark,ice,203.9,147,147,4405893,40,Snarl,Avalanche,Focus Blast
+Empoleon,49.8,water,steel,177.8,158.9,167,4717143,40,Waterfall,Hydro Cannon,Flash Cannon
+Ampharos,49.6,electric,none,178.6,145.4,175,4545151,40,Volt Switch,Thunder Punch,Focus Blast
+Electivire,49.4,electric,none,208.6,140.7,154,4519898,40,Thunder Shock,Wild Charge,Ice Punch
+Glaceon,49.4,ice,none,199.9,173.9,140,4866931,40,Ice Shard,Avalanche,Icy Wind
+Beartic,49.1,ice,none,196,132,182,4707860,40,Powder Snow,Surf,Ice Punch
+Ampharos (Shadow),48.9,electric,none,178.6,145.4,175,4545151,40,Volt Switch,Thunder Punch,Focus Blast
+Kangaskhan,48.9,normal,none,154.9,142.3,195,4296820,40,Mud Slap,Stomp,Crunch
+Mewtwo (Shadow),48.9,psychic,none,248.9,155.7,180,6976430,40,Psycho Cut,Psystrike,Shadow Ball
+Donphan,48.7,ground,none,181,158.1,175,5005961,40,Counter,Earthquake,Heavy Slam
+Kingdra,48.7,water,dragon,165.2,165.2,154,4201431,40,Dragon Breath,Outrage,Octazooka
+Exploud,48.4,normal,none,153.3,120.1,195,3591401,40,Bite,Crunch,Disarming Voice
+Scrafty,48.4,dark,fighting,140.7,187.3,140,3688760,40,Counter,Foul Play,Power-Up Punch
+Stunfisk,48.4,ground,electric,125.7,147,201,3712702,40,Mud Shot,Mud Bomb,Discharge
+Muk (Shadow),48.2,poison,none,162,147.8,195,4668894,40,Poison Jab,Thunder Punch,Dark Pulse
+Aerodactyl,48,rock,flying,186.5,137.5,162,4154897,40,Rock Throw,Rock Slide,Earth Power
+Aerodactyl (Shadow),48,rock,flying,186.5,137.5,162,4154897,40,Rock Throw,Rock Slide,Earth Power
+Golurk,47.7,ground,ghost,187.3,133.6,173,4327780,40,Mud Slap,Shadow Punch,Earth Power
+Klinklang,47.7,steel,none,169.1,181,134,4101456,40,Thunder Shock,Mirror Shot,Zap Cannon
+Blastoise,47.5,water,none,147,175.4,160,4126386,40,Water Gun,Hydro Cannon,Ice Beam
+Feraligatr,47.2,water,none,173.9,160.4,168,4686105,40,Water Gun,Hydro Cannon,Crunch
+Charizard,47,fire,flying,188.1,148.6,158,4415459,40,Dragon Breath,Blast Burn,Dragon Claw
+Rhydon,46.8,ground,rock,187.3,147,195,5368833,40,Mud Slap,Stone Edge,Surf
+Mandibuzz,46.5,dark,flying,113.8,173.9,203,4016661,40,Snarl,Foul Play,Aerial Ace
+Meganium,46.5,grass,none,144.6,171.5,162,4017999,40,Vine Whip,Frenzy Plant,Earthquake
+Ursaring (Shadow),46.5,normal,none,198.4,125.7,175,4362072,40,Shadow Claw,Close Combat,Hyper Beam
+Deoxys (Defense),46.3,psychic,none,125.7,272.7,120,4111322,40,Counter,Psycho Boost,Rock Slide
+Escavalier,46.1,bug,steel,188.1,159.6,147,4413973,40,Counter,Drill Run,Megahorn
+Gliscor,46.1,ground,flying,158.1,187.3,154,4559141,40,Wing Attack,Night Slash,Earthquake
+Unfezant,46.1,normal,flying,190.5,127.2,162,3925924,40,Air Slash,Sky Attack,Hyper Beam
+Gliscor (Shadow),45.8,ground,flying,158.1,187.3,154,4559141,40,Fury Cutter,Night Slash,Earthquake
+Gengar,45.6,ghost,poison,218.1,129.6,134,3788277,40,Shadow Claw,Shadow Ball,Shadow Punch
+Umbreon,45.1,dark,none,111.4,201.5,182,4087094,40,Snarl,Foul Play,Last Resort
+Sirfetchd,44.9,fighting,none,207.8,150.9,136,4266895,40,Counter,Close Combat,Leaf Blade
+Gallade (Shadow),44.4,psychic,fighting,199.2,166,145,4792607,40,Confusion,Close Combat,Leaf Blade
+Muk,44.2,poison,none,162,147.8,195,4668894,40,Poison Jab,Thunder Punch,Dark Pulse
+Relicanth,44.2,water,rock,139.9,172.3,189,4554865,40,Water Gun,Aqua Tail,Ancient Power
+Blaziken,43.7,fire,fighting,201.5,123.3,162,4024980,40,Counter,Blaze Kick,Blast Burn
+Walrein,43.5,ice,water,155.7,150.9,203,4770673,40,Waterfall,Blizzard,Earthquake
+Gastrodon (East),43.2,water,ground,145.4,124.9,204,3704154,40,Mud Slap,Body Slam,Earth Power
+Gastrodon (West),43.2,water,ground,145.4,124.9,204,3704154,40,Mud Slap,Body Slam,Earth Power
+Mamoswine (Shadow),43.2,ice,ground,207.1,127.2,203,5348194,40,Powder Snow,Avalanche,Bulldoze
+Moltres (Shadow),43.2,fire,flying,210.2,154.9,175,5698489,40,Fire Spin,Sky Attack,Overheat
+Politoed (Shadow),43.2,water,none,149.4,153.3,175,4007611,40,Mud Shot,Weather Ball (Water),Surf
+Alakazam (Shadow),43,psychic,none,226,143.8,127,4128812,40,Counter,Fire Punch,Shadow Ball
+Mesprit,42.8,psychic,none,179.4,179.4,162,5213756,40,Confusion,Future Sight,Blizzard
+Electivire (Shadow),42.5,electric,none,208.6,140.7,154,4519898,40,Thunder Shock,Wild Charge,Ice Punch
+Politoed,42.5,water,none,149.4,153.3,175,4007611,40,Mud Shot,Weather Ball (Water),Surf
+Walrein (Shadow),42.3,ice,water,155.7,150.9,203,4770673,40,Waterfall,Blizzard,Earthquake
+Leafeon,42.1,grass,none,182.6,184.9,140,4726502,40,Quick Attack,Leaf Blade,Last Resort
+Roserade,42.1,grass,poison,203.9,158.1,134,4318555,40,Bullet Seed,Weather Ball (Fire),Grass Knot
+Tentacruel,42.1,water,poison,143,177,162,4102283,40,Poison Jab,Hydro Pump,Sludge Wave
+Scizor,41.8,bug,steel,198.4,154.9,147,4516803,40,Fury Cutter,Night Slash,X-Scissor
+Cloyster,41.6,water,ice,158.9,214.2,120,4082541,40,Ice Shard,Avalanche,Hydro Pump
+Weavile,41.4,dark,ice,203.9,147,147,4405893,40,Snarl,Avalanche,Focus Blast
+Azelf,41.1,psychic,none,225.2,131.2,154,4550485,40,Confusion,Future Sight,Fire Blast
+Gallade,41.1,psychic,fighting,199.2,166,145,4792607,40,Confusion,Close Combat,Leaf Blade
+Espeon,40.9,psychic,none,218.1,150.2,140,4585373,40,Confusion,Psychic,Last Resort
+Miltank,40.7,normal,none,135.9,164.4,182,4066747,40,Tackle,Body Slam,Ice Beam
+Blastoise (Shadow),40.4,water,none,147,175.4,160,4126386,40,Water Gun,Hydro Cannon,Ice Beam
+Emboar,40.4,fire,fighting,197.6,112.2,203,4500993,40,Ember,Rock Slide,Flame Charge
+Probopass,40.4,rock,steel,118.5,229.2,134,3640642,40,Spark,Rock Slide,Magnet Bomb
+Ferrothorn,40.2,grass,steel,136.7,188.1,153,3934581,40,Bullet Seed,Power Whip,Mirror Shot
+Slowbro (Shadow),39.7,water,psychic,151.7,154.1,182,4255898,40,Confusion,Psychic,Ice Beam
+Slowking (Shadow),39.7,water,psychic,151.7,154.1,182,4255898,40,Confusion,Psychic,Blizzard
+Suicune (Shadow),39.7,water,none,154.1,197.6,189,5754670,40,Snarl,Ice Beam,Hydro Pump
+Krookodile,39.5,ground,dark,192.8,136.7,182,4798343,40,Snarl,Crunch,Earthquake
+Thundurus (Incarnate),39.5,electric,flying,222.1,141.5,160,5026472,40,Thunder Shock,Crunch,Thunder
+Cloyster (Shadow),39,water,ice,158.9,214.2,120,4082541,40,Ice Shard,Avalanche,Hydro Pump
+Staraptor,39,normal,flying,196.8,122.5,168,4049714,40,Wing Attack,Brave Bird,Close Combat
+Tornadus (Incarnate),38.8,flying,none,222.1,141.5,160,5026472,40,Air Slash,Grass Knot,Dark Pulse
+Alakazam,38.5,psychic,none,226,143.8,127,4128812,40,Counter,Fire Punch,Shadow Ball
+Slowking,38.5,water,psychic,151.7,154.1,182,4255898,40,Confusion,Psychic,Blizzard
+Flygon,38.3,ground,dragon,173.9,144.6,162,4073547,40,Mud Shot,Dragon Claw,Earth Power
+Mr. Rime,38.3,ice,psychic,179.4,153.3,162,4455809,40,Ice Shard,Icy Wind,Ice Punch
+Alomomola,38.1,water,none,120.9,115.4,278,3878583,40,Waterfall,Hydro Pump,Psychic
+Golem,37.8,rock,ground,178.6,168.3,162,4870651,40,Mud Shot,Stone Edge,Earthquake
+Charizard (Shadow),37.6,fire,flying,188.1,148.6,158,4415459,40,Fire Spin,Blast Burn,Dragon Claw
+Forretress,37.6,bug,steel,139.1,173.9,154,3724260,40,Bug Bite,Mirror Shot,Earthquake
+Typhlosion,37.6,fire,none,188.1,148.6,158,4415459,40,Incinerate,Blast Burn,Solar Beam
+Chandelure,37.4,ghost,fire,226,155.7,134,4715427,40,Incinerate,Shadow Ball,Flame Charge
+Slowbro,37.4,water,psychic,151.7,154.1,182,4255898,40,Confusion,Psychic,Ice Beam
+Arcanine,37.1,fire,none,191.3,143,175,4787579,40,Snarl,Wild Charge,Flamethrower
+Arcanine (Shadow),36.9,fire,none,191.3,143,175,4787579,40,Snarl,Wild Charge,Flamethrower
+Noivern,36.9,flying,dragon,173.9,150.2,168,4386009,40,Air Slash,Hurricane,Psychic
+Golduck,36.7,water,none,162.8,139.9,162,3689262,40,Water Gun,Cross Chop,Ice Beam
+Houndoom,36.7,dark,fire,188.9,125.7,154,3655104,40,Snarl,Crunch,Flamethrower
+Carracosta,36.4,water,rock,163.6,167.5,153,4193548,40,Water Gun,Surf,Body Slam
+Leavanny,36.4,bug,grass,173.9,142.3,154,3808903,40,Bug Bite,Leaf Blade,X-Scissor
+Skuntank,36.4,poison,dark,157.3,116.2,193,3526239,40,Poison Jab,Crunch,Sludge Bomb
+Greninja,36,water,dark,188.1,132,150,3723648,40,Bubble,Night Slash,Surf
+Magmortar (Shadow),36,fire,none,207.1,147.8,154,4712459,40,Karate Chop,Fire Punch,Thunderbolt
+Serperior,35.5,grass,none,139.1,173.1,154,3707332,40,Vine Whip,Grass Knot,Leaf Tornado
+Uxie,35.5,psychic,none,135.1,225.2,154,4687547,40,Confusion,Future Sight,Thunder
+Bellossom,35.2,grass,none,145.4,158.9,154,3557284,40,Bullet Seed,Leaf Blade,Return
+Flareon,35.2,fire,none,206.3,153.3,140,4427456,40,Fire Spin,Flamethrower,Overheat
+Porygon2,34.8,normal,none,168.3,154.1,168,4358203,40,Lock On,Tri Attack,Zap Cannon
+Stunfisk (Galarian),34.8,ground,steel,125.7,147,201,3712702,40,Mud Shot,Rock Slide,Earthquake
+Nidoqueen,34.5,poison,ground,154.1,148.6,175,4006955,40,Poison Jab,Earth Power,Stone Edge
+Beheeyem,34.3,psychic,none,186.5,140.7,154,4040515,40,Confusion,Rock Slide,Psychic
+Ninetales,34.3,fire,none,145.4,162,151,3557399,40,Fire Spin,Weather Ball (Fire),Psyshock
+Crobat,34.1,poison,flying,165.2,152.5,168,4232499,40,Air Slash,Shadow Ball,Sludge Bomb
+Darmanitan (Standard),34.1,fire,none,219.7,101.9,195,4367703,40,Incinerate,Rock Slide,Overheat
+Forretress (Shadow),34.1,bug,steel,139.1,173.9,154,3724260,40,Bug Bite,Mirror Shot,Earthquake
+Jellicent,34.1,water,ghost,137.5,152.5,189,3964171,40,Hex,Shadow Ball,Ice Beam
+Jolteon,34.1,electric,none,195.2,155.7,140,4254761,40,Volt Switch,Discharge,Last Resort
+Porygon2 (Shadow),34.1,normal,none,168.3,154.1,168,4358203,40,Lock On,Tri Attack,Zap Cannon
+Sceptile,34.1,grass,none,188.1,145.4,147,4020648,40,Bullet Seed,Leaf Blade,Dragon Claw
+Starmie,34.1,water,psychic,177.8,157.3,134,3747351,40,Water Gun,Psychic,Ice Beam
+Archeops,33.8,rock,flying,242.6,121.7,154,4547407,40,Wing Attack,Dragon Claw,Crunch
+Armaldo,33.8,rock,bug,187.3,149.4,154,4308388,40,Fury Cutter,Rock Blast,Cross Poison
+Crobat (Shadow),33.8,poison,flying,165.2,152.5,168,4232499,40,Air Slash,Shadow Ball,Sludge Bomb
+Kingler,33.8,water,none,201.5,154.9,127,3964459,40,Mud Shot,Crabhammer,X-Scissor
+Omastar,33.8,rock,water,175.4,170.7,147,4402588,40,Mud Shot,Rock Slide,Rock Blast
+Bronzong,33.4,steel,psychic,139.1,180.2,143,3583996,40,Confusion,Psyshock,Heavy Slam
+Drapion,33.4,poison,dark,154.1,171.5,147,3885041,40,Infestation,Aqua Tail,Crunch
+Hitmonlee (Shadow),33.4,fighting,none,188.9,154.9,120,3510906,40,Rock Smash,Close Combat,Stone Edge
+Tauros,33.1,normal,none,168.3,156.5,154,4056481,40,Tackle,Horn Attack,Earthquake
+Nidoking (Shadow),32.9,poison,ground,173.1,135.1,162,3789127,40,Fury Cutter,Earth Power,Megahorn
+Golduck (Shadow),32.7,water,none,162.8,139.9,162,3689262,40,Water Gun,Cross Chop,Ice Beam
+Piloswine,32.7,ice,ground,154.9,120.9,189,3539919,40,Powder Snow,Avalanche,Stone Edge
+Probopass (Shadow),32.7,rock,steel,118.5,229.2,134,3640642,40,Spark,Rock Slide,Magnet Bomb
+Exeggutor (Shadow),32.4,grass,psychic,196,129.6,182,4623287,40,Bullet Seed,Seed Bomb,Psychic
+Durant,32.2,bug,steel,183.3,160.4,131,3853357,40,Bug Bite,X-Scissor,Stone Edge
+Poliwrath (Shadow),32.2,water,fighting,155.7,157.3,175,4284906,40,Mud Shot,Dynamic Punch,Ice Punch
+Omastar (Shadow),32,rock,water,175.4,170.7,147,4402588,40,Mud Shot,Rock Slide,Rock Blast
+Exeggutor,31.5,grass,psychic,196,129.6,182,4623287,40,Bullet Seed,Seed Bomb,Psychic
+Exeggutor (Alolan),31.2,grass,dragon,193.6,132.8,182,4678760,40,Bullet Seed,Seed Bomb,Dragon Pulse
+Gothitelle,31.2,psychic,none,150.9,173.9,147,3857957,40,Confusion,Rock Slide,Psychic
+Honchkrow,31.2,dark,flying,203.9,93.3,189,3593747,40,Snarl,Brave Bird,Sky Attack
+Piloswine (Shadow),31.2,ice,ground,154.9,120.9,189,3539919,40,Powder Snow,Avalanche,Stone Edge
+Pinsir,31.2,bug,none,199.9,155.7,140,4358116,40,Fury Cutter,Close Combat,X-Scissor
+Skuntank (Shadow),31.2,poison,dark,157.3,116.2,193,3526239,40,Poison Jab,Crunch,Sludge Bomb
+Infernape,31,fire,fighting,187.3,131.2,156,3833231,40,Fire Spin,Close Combat,Blast Burn
+Reuniclus,31,psychic,none,181,128.8,203,4732636,40,Hidden Power (Psychic),Shadow Ball,Future Sight
+Yanmega,30.8,bug,flying,194.4,135.1,169,4440194,40,Wing Attack,Aerial Ace,Bug Buzz
+Sandslash,30.5,ground,none,155.7,150.2,154,3600183,40,Mud Shot,Earthquake,Bulldoze
+Crustle,30.3,bug,rock,160.4,169.9,147,4007152,40,Fury Cutter,Rock Slide,X-Scissor
+Nidoqueen (Shadow),30.3,poison,ground,154.1,148.6,175,4006955,40,Poison Jab,Earth Power,Stone Edge
+Rotom (Wash),30.1,electric,water,173.1,184.9,120,3840831,40,Thunder Shock,Thunderbolt,Hydro Pump
+Drifblim,28.9,ghost,flying,154.1,92.5,258,3676412,40,Hex,Shadow Ball,Icy Wind
+Hitmonlee,28.9,fighting,none,188.9,154.9,120,3510906,40,Rock Smash,Close Combat,Stone Edge
+Ninetales (Shadow),28.9,fire,none,145.4,162,151,3557399,40,Fire Spin,Weather Ball (Fire),Psyshock
+Flygon (Shadow),28.7,ground,dragon,173.9,144.6,162,4073547,40,Mud Shot,Dragon Claw,Earth Power
+Lilligant,28.7,grass,none,181,134.4,147,3574256,40,Hidden Power (Grass),Petal Blizzard,Hyper Beam
+Pinsir (Shadow),28.7,bug,none,199.9,155.7,140,4358116,40,Fury Cutter,Close Combat,X-Scissor
+Luxray,28.4,electric,none,195.2,135.1,162,4273582,40,Spark,Wild Charge,Crunch
+Throh,28.2,fighting,none,147.8,138.3,217,4435304,40,Low Kick,Body Slam,Low Sweep
+Sigilyph,28,psychic,flying,173.1,143.8,150,3734141,40,Air Slash,Ancient Power,Signal Beam
+Bellossom (Shadow),27.7,grass,none,145.4,158.9,154,3557284,40,Bullet Seed,Leaf Blade,Dazzling Gleam
+Lunatone,27.5,rock,psychic,152.5,132.8,175,3543958,40,Confusion,Rock Slide,Psychic
+Solrock,27.5,rock,psychic,152.5,132.8,175,3543958,40,Confusion,Rock Slide,Psychic
+Runerigus,27.2,ground,ghost,140.7,199.2,131,3670082,40,Astonish,Shadow Ball,Sand Tomb
+Scyther (Shadow),26.8,bug,flying,184.1,146.2,147,3957573,40,Fury Cutter,Night Slash,X-Scissor
+Scyther,26.5,bug,flying,184.1,146.2,147,3957573,40,Fury Cutter,Night Slash,X-Scissor
+Nidoking,26.1,poison,ground,173.1,135.1,162,3789127,40,Fury Cutter,Earth Power,Megahorn
+Samurott,26.1,water,none,179.4,135.9,182,4438229,40,Fury Cutter,Megahorn,Hydro Pump
+Weezing (Galarian),26.1,poison,fairy,149.4,167.5,140,3503561,40,Tackle,Sludge,Play Rough
+Ludicolo,25.4,water,grass,148.6,150.9,162,3633208,40,Bubble,Energy Ball,Ice Beam
+Dusknoir,24.7,ghost,none,154.1,212.6,113,3702110,40,Hex,Dark Pulse,Ominous Wind
+Mismagius (Shadow),24.7,ghost,none,178.6,159.6,134,3820750,40,Hex,Shadow Ball,Dark Pulse
+Grumpig,24,psychic,none,147,160.4,162,3820392,40,Extrasensory,Shadow Ball,Psychic
+Houndoom (Shadow),24,dark,fire,188.9,125.7,154,3655104,40,Snarl,Crunch,Flamethrower
+Kabutops,24,rock,water,185.7,158.9,134,3953236,40,Mud Shot,Stone Edge,Ancient Power
+Mismagius,23.2,ghost,none,178.6,159.6,134,3820750,40,Hex,Shadow Ball,Dark Pulse
+Musharna,22.8,psychic,none,156.5,143,211,4722916,40,Charge Beam,Psyshock,Dazzling Gleam
+Dusknoir (Shadow),22.3,ghost,none,154.1,212.6,113,3702110,40,Hex,Dark Pulse,Ominous Wind
+Sawk,22.1,fighting,none,194.4,132.8,154,3975109,40,Poison Jab,Body Slam,Low Sweep
+Garbodor,21.4,poison,none,154.9,141.5,162,3549834,40,Infestation,Body Slam,Seed Bomb
+Granbull,20.9,fairy,none,179.4,115.4,175,3622436,40,Snarl,Close Combat,Crunch
+Cradily,18.5,rock,grass,132,165.2,169,3684117,40,Bullet Seed,Stone Edge,Grass Knot
+Cofagrigus,18.3,ghost,none,140.7,199.2,131,3670082,40,Astonish,Shadow Ball,Dark Pulse
+Sandslash (Shadow),17.6,ground,none,155.7,150.2,154,3600183,40,Mud Shot,Earthquake,Bulldoze
+Deoxys,16.9,psychic,none,284.5,102.7,120,3507608,40,Charge Beam,Psycho Boost,Thunderbolt
+Deoxys (Speed),16.9,psychic,none,193.6,184.1,120,4278458,40,Charge Beam,Psycho Boost,Thunderbolt
+Cradily (Shadow),16.4,rock,grass,132,165.2,169,3684117,40,Bullet Seed,Stone Edge,Grass Knot
+Weezing,16,poison,none,149.4,167.5,140,3503561,40,Infestation,Shadow Ball,Sludge Bomb
+Weezing (Shadow),13.4,poison,none,149.4,167.5,140,3503561,40,Infestation,Shadow Ball,Sludge Bomb
