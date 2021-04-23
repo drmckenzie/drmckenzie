@@ -720,3 +720,22 @@ def findBothAttackOfType(allData,thisType):
     setData.drop_duplicates(subset=['Pokemon'], inplace=True)
     
     return setData
+	
+def concatenateListOfMon(nums):
+	"""
+	see this for efficient number returns i.e 1,2,3,4 returns 1-4
+	https://stackoverflow.com/a/20725061
+	"""
+    
+    ranges = sum((list(t) for t in zip(nums, nums[1:]) if t[0]+1 != t[1]), [])
+    iranges = iter(nums[0:1] + ranges + nums[-1:])
+    # print ', '.join([str(n) + '-' + str(next(iranges)) for n in iranges])
+    
+    returnString = ','.join([str(n) + '-' + str(next(iranges)) for n in iranges])
+    
+    largestNum = nums[-1] + 2
+    
+    for num in range(1,largestNum):
+        returnString = returnString.replace(','+str(num)+'-'+str(num)+',', ','+str(num)+',')
+    
+    return returnString
