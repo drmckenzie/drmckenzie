@@ -35,7 +35,12 @@ Here are some ideas to get you started:
 
 This is a series of pages that list the best moves for PvE (raids) and PvP:
 
-#### PvP
+#### PvP combined
+
+- [Combined PvP league lookup][PvP_leagues]
+- [(csv) Combined PvP league data][PvP_csv]
+
+#### PvP individual moves
 
 - [Great League][PvP_great]
 - [Great Retro League][PvP_retro]
@@ -62,3 +67,6 @@ This is a series of pages that list the best moves for PvE (raids) and PvP:
 [PvP_ultra_premier_XL]: https://drmckenzie.github.io/top_ranked_premier_ultra_league_XL_PvP_copypaste.html
 [PvP_retro]: https://drmckenzie.github.io/top_ranked_retro_league_PvP_copypaste.html
 [PvP_ultra]: https://drmckenzie.github.io/top_ranked_ultra_league_PvP_copypaste.html
+
+[PvP_leagues]: https://drmckenzie.github.io/Top_X_pokemon_by_leagues.html
+[PvP_csv]: https://drmckenzie.github.io/csv_Top_X_pokemon_by_leagues.csv
