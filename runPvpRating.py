@@ -40,23 +40,40 @@ f.close()
 
 stringHeader += "<p>Best Pokemon Go moves for PvP (league battles), results for top "+str(int(pvpTopX))+" pokemon in each league listed</p> \n\n <p>Search on all fields of the table: Name, Number, Score. <b>(click table header to sort)</b> </p> \n \n"
 stringHeader += "<p>Leagues:<br>GL=Great League ; \nXG=Remix (great) ; \nRL=Retro (Great) ; \nUL=Ultra League ; \nUP=Premier (Ultra) ; \nML=Master League ; \nCL=Classic Master </p> \n"
-stringHeader += "<p>Note: GL is the <b>score</b> in that league (high=good). GLx is the <b>place</b> in that league (low=good). <b>Best</b> is which leagues the pokemon are in the top x of, <b>BestNo</b> is how many leagues. </p>"
+stringHeaderScore = stringHeader + "<p>Note: GL is the <b>score</b> in that league (high=good). "
+stringHeaderRank = stringHeader + "GLx is the <b>place</b> in that league (low=good). "
+stringHeaderFinal = "<b>Best</b> is which leagues the pokemon are in the top x of, <b>BestNo</b> is how many leagues. </p>"
+stringHeaderScore += stringHeaderFinal
+stringHeaderRank += stringHeaderFinal
+
+setDataTopXRank  = setDataTopX[['Pokemon', '#', 'GLx', 'XGx', 'RLx', 'ULx', 'MLx', 'CLx', 'SumRank', 'Best', 'BestNo']].copy()
+setDataTopXScore = setDataTopX[['Pokemon', '#', 'GL',  'XG',  'RL',  'UL',  'ML',  'CL',  'SumRank', 'Best', 'BestNo']].copy()
 
 # ugh, this is so hacky. Forcing the html formats to behave:
-myFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format}
-stringTable = setDataTopX.to_html(classes="sortable", table_id="myTable", index=False, formatters=myFormats)
+# sort by rank
+rankFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format}
+rankStringTable = setDataTopXRank.to_html(classes="sortable", table_id="myTable", index=False, formatters=rankFormats)
+# sort by score
+scoreFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GL': '{:,.0f}'.format,'UL': '{:,.0f}'.format,'ML': '{:,.0f}'.format,'RL': '{:,.0f}'.format,'XG': '{:,.0f}'.format,'CL': '{:,.0f}'.format}
+scoreStringTable = setDataTopXScore.to_html(classes="sortable", table_id="myTable", index=False, formatters=scoreFormats)
+
 stringInput =  "\n<input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search table for names, moves\"> \n</input> \n"
 
 # concatentate the strings to produce the text:
-fileCat = stringHeader + stringInput + stringTable  + stringFooter
+rankFileCat = stringHeaderRank + stringInput + rankStringTable  + stringFooter
+scoreFileCat = stringHeaderScore + stringInput + scoreStringTable  + stringFooter
 
 # dump to html:
-outHtmlFilename = 'Top_X_pokemon_by_leagues.html'
+rankHtmlFilename = 'Top_X_pokemon_by_leagues_rank.html'
 # write html to file
-text_file = open(outHtmlFilename, "w")
-text_file.write(fileCat)
+text_file = open(rankHtmlFilename, "w")
+text_file.write(rankFileCat)
 text_file.close()
 
+scoreHtmlFilename = 'Top_X_pokemon_by_leagues_score.html'
+text_file = open(scoreHtmlFilename, "w")
+text_file.write(scoreFileCat)
+text_file.close()
 
 # set the league data back to NaN before export:
 setDataTopX.loc[setDataTopX['GLx']==999,"GLx"] = np.nan
@@ -69,9 +86,6 @@ setDataTopX.loc[setDataTopX['CLx']==999,"CLx"] = np.nan
 # dump this to CSV file, top directory:
 outCsvFilename = 'csv_Top_X_pokemon_by_leagues.csv'
 setDataTopX.to_csv(outCsvFilename)
-
-
-
 
 print("The score cutoff for top number of pokemon in the league is set at top: "+str(pvpTopX))
 print("")
