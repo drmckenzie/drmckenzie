@@ -156,13 +156,16 @@ def getPvpPokeData(pvpPokeFilename,typeFilter,topX):
         #gpResultBoth.drop_duplicates(subset=['Pokemon','#'], inplace=True)
         
     # sort by ..
-    pvpResultBoth.sort_values(by=["Score",'Pokemon'], inplace=True, ascending=False)
+    pvpResultBoth.sort_values(by=["Score"], inplace=True, ascending=False)
 
     # extract topX if required:
     if (topX>0)&( topX<=len(pvpResultBoth) ):
             pvpResult = pvpResultBoth.head(topX)
     else:
         pvpResult = pvpResultBoth.copy()
+        
+    # drop nans if all columns are nan
+    pvpResult = pvpResult.dropna(how='all')
                                  
     return pvpResult
 
