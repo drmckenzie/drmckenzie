@@ -166,7 +166,9 @@ def getPvpPokeData(pvpPokeFilename,typeFilter,topX):
         
     # drop nans if all columns are nan
     pvpResult = pvpResult.dropna(how='all')
-                                 
+    
+    pvpResult = pvpResult.reset_index(drop=True)
+    
     return pvpResult
 
 
@@ -766,6 +768,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
      
     remixFilename = 'data/great_remix_overall.csv'
     classicFilename = 'data/master_classic_overall.csv'
+    premierFilename = 'data/ultra_premier_overall.csv'
      
     # load data
     greatData=getPvpPokeData(greatFilename,typeFilter,topX)
@@ -775,6 +778,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
      
     remixData=getPvpPokeData(remixFilename,typeFilter,topX)
     classicData=getPvpPokeData(classicFilename,typeFilter,topX)
+    premierData=getPvpPokeData(premierFilename,typeFilter,topX)
     
     #reduce data
     columnList=["Pokemon","#","Score"]
@@ -786,6 +790,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     
     remixData = remixData[columnList]
     classicData = classicData[columnList]
+    premierData = premierData[columnList]
      
     greatData.rename(columns={"Score": "GL"},inplace=True)
     ultraData.rename(columns={"Score": "UL"},inplace=True)
@@ -794,6 +799,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
      
     remixData.rename(columns={"Score": "XG"},inplace=True)
     classicData.rename(columns={"Score": "CL"},inplace=True)
+    premierData.rename(columns={"Score": "PL"},inplace=True)
      
     # add index for all dataframes
     greatData   = addNewIndexCol(greatData,'GLx')
@@ -803,6 +809,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     
     remixData   = addNewIndexCol(remixData,'XGx')
     classicData = addNewIndexCol(classicData,'CLx')
+    premierData = addNewIndexCol(premierData,'PLx')
     
     setDataTopX = pd.DataFrame()
      
@@ -814,18 +821,19 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
      
     setDataTopX=setDataTopX.merge(remixData, left_on=mergeList, right_on=mergeList, how="outer")
     setDataTopX=setDataTopX.merge(classicData, left_on=mergeList, right_on=mergeList, how="outer")
+    setDataTopX=setDataTopX.merge(premierData, left_on=mergeList, right_on=mergeList, how="outer")
      
     # control the type:
     setDataTopX.astype({'#': 'int32'}).dtypes
      
     #reorder column order:
     #setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','GLx','XG','XGx','RL','RLx','UL','ULx','ML','MLx','CL','CLx'])
-    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','XG','RL','UL','ML','CL','GLx','XGx','RLx','ULx','MLx','CLx'])
+    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','XG','RL','UL','PL','ML','CL','GLx','XGx','RLx','ULx','PLx','MLx','CLx'])
      
     import numpy as np
      
     # rank them by usefulness
-    setDataTopX['SumRank'] = setDataTopX.loc[:,['GLx','XGx','RLx','ULx','MLx','CLx']].sum(axis=1)
+    setDataTopX['SumRank'] = setDataTopX.loc[:,['GLx','XGx','RLx','ULx','PLx','MLx','CLx']].sum(axis=1)
     setDataTopX.loc[setDataTopX['SumRank'] == 0] = np.nan
     setDataTopX.sort_values(by=['SumRank'],ascending=True,inplace=True)
      
@@ -837,14 +845,15 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
      
     setDataTopX.loc[setDataTopX['XGx'].isna(),"XGx"] = int(999)
     setDataTopX.loc[setDataTopX['CLx'].isna(),"CLx"] = int(999)
+    setDataTopX.loc[setDataTopX['PLx'].isna(),"PLx"] = int(999)
      
     # control what gets shown:
     StX = str(pvpTopX)
     #dispDataTopX = setDataTopX.query('GLx <= 5' )
     #trashDataTopX = setDataTopX.query('GLx > 10')+str(pvpTopX) )
      
-    dispDataTopX  = setDataTopX.query('GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or ULx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
-    trashDataTopX = setDataTopX.query('GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and ULx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
+    dispDataTopX  = setDataTopX.query('GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or ULx<='+StX+' or PLx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
+    trashDataTopX = setDataTopX.query('GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and ULx>'+StX+' and PLx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
      
     print("The score cutoff for top number of pokemon in the league is set at top: "+str(pvpTopX))
     print("")
@@ -879,6 +888,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
             setDataTopX.loc[i,"Best"].append("RL")
         if setDataTopX.loc[i,"ULx"]<pvpTopX:
             setDataTopX.loc[i,"Best"].append("UL")
+        if setDataTopX.loc[i,"PLx"]<pvpTopX:
+            setDataTopX.loc[i,"Best"].append("PL")
         if setDataTopX.loc[i,"MLx"]<pvpTopX:
             setDataTopX.loc[i,"Best"].append("ML")
         if setDataTopX.loc[i,"CLx"]<pvpTopX:
@@ -904,3 +915,42 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     
     return setDataTopX,keepList,trashList
 
+def dropDuplicatesPlz(myDF,minmax):
+    
+    # go through the data, for each pokemon, keep the higest score in each column.
+    listOfPokemon = myDF["Pokemon"]
+    listOfPokemon = list(set(listOfPokemon))
+    #listOfPokemon = ["Machamp","Medicham"]
+    colsToOperate = myDF.columns[2:-3]
+    for mon in listOfPokemon:
+        #print(mon)
+        for col in colsToOperate:
+            if minmax.lower() == "min":
+                minmaxValue = myDF.loc[myDF.Pokemon==mon,col].min()
+            if minmax.lower() == "max":
+                minmaxValue = myDF.loc[myDF.Pokemon==mon,col].max()
+            #print(minValue)
+            # set all column at this min value
+            myDF.loc[myDF.Pokemon==mon,col]=minmaxValue
+  
+    return myDF
+
+def printTopxForLeague(setDataTopXRank,league,pvpTopX):
+    
+    newData = setDataTopXRank[["Pokemon","#",league]].copy()
+    newData.sort_values(by=[league], inplace=True, ascending=True)
+    # extract topX if required:
+    pvpResult = newData.head(pvpTopX)
+    
+    listOfPokemon = pvpResult["#"]
+    listOfPokemon = list(set(listOfPokemon))
+    listOfPokemon = reversed(listOfPokemon)
+    
+    returnString = ','.join([str(int(n)) for n in listOfPokemon])
+    
+    print("\n")
+    print("Result for league: " + league)
+    print("\n")
+    print(returnString)
+    
+    return

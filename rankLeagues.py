@@ -116,3 +116,7 @@ print("\n")
 print("For Master leagues, top"+str(topX)+", keep:")
 print(keepListMasterString)
 
+newData = setDataTopXRank[["Pokemon","#","GLx"]]
+newData.sort_values(by=["GLx"], inplace=True, ascending=True)
+# extract topX if required:
+pvpResult = newData.head(topX)

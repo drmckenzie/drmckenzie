@@ -46,15 +46,28 @@ stringHeaderFinal = "<b>Best</b> is which leagues the pokemon are in the top x o
 stringHeaderScore += stringHeaderFinal
 stringHeaderRank += stringHeaderFinal
 
-setDataTopXRank  = setDataTopX[['Pokemon', '#', 'GLx', 'XGx', 'RLx', 'ULx', 'MLx', 'CLx', 'SumRank', 'Best', 'BestNo']].copy()
-setDataTopXScore = setDataTopX[['Pokemon', '#', 'GL',  'XG',  'RL',  'UL',  'ML',  'CL',  'SumRank', 'Best', 'BestNo']].copy()
+setDataTopXRank  = setDataTopX[['Pokemon', '#', 'GLx', 'XGx', 'RLx', 'ULx', 'PLx', 'MLx', 'CLx', 'SumRank', 'Best', 'BestNo']].copy()
+setDataTopXScore = setDataTopX[['Pokemon', '#', 'GL',  'XG',  'RL',  'UL',  'PL',  'ML',  'CL',  'SumRank', 'Best', 'BestNo']].copy()
 
+# go through the data, for each pokemon, keep the higest score in each column.
+setDataTopXRank  = match.dropDuplicatesPlz(setDataTopXRank,"min")
+setDataTopXScore = match.dropDuplicatesPlz(setDataTopXScore,"max")
+
+# reindex sumrank
+setDataTopXRank['SumRank'] = setDataTopXRank.loc[:,['GLx','XGx','RLx','ULx','PLx','MLx','CLx']].sum(axis=1)
+colsToOperate = setDataTopXRank.columns[2:-3]
+setDataTopXRank.drop_duplicates(subset=colsToOperate,inplace=True, keep='first')
+ 
+setDataTopXScore['SumRank'] = setDataTopXScore.loc[:,['GL','XG','RL','UL','PL','ML','CL']].sum(axis=1)
+colsToOperate = setDataTopXScore.columns[2:-3]
+setDataTopXScore.drop_duplicates(subset=colsToOperate,inplace=True, keep='first')
+                                
 # ugh, this is so hacky. Forcing the html formats to behave:
 # sort by rank
-rankFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format}
+rankFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'PLx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format}
 rankStringTable = setDataTopXRank.to_html(classes="sortable", table_id="myTable", index=False, formatters=rankFormats)
 # sort by score
-scoreFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GL': '{:,.0f}'.format,'UL': '{:,.0f}'.format,'ML': '{:,.0f}'.format,'RL': '{:,.0f}'.format,'XG': '{:,.0f}'.format,'CL': '{:,.0f}'.format}
+scoreFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GL': '{:,.0f}'.format,'UL': '{:,.0f}'.format,'PL': '{:,.0f}'.format,'ML': '{:,.0f}'.format,'RL': '{:,.0f}'.format,'XG': '{:,.0f}'.format,'CL': '{:,.0f}'.format}
 scoreStringTable = setDataTopXScore.to_html(classes="sortable", table_id="myTable", index=False, formatters=scoreFormats)
 
 stringInput =  "\n<input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search table for names, moves\"> \n</input> \n"
@@ -82,6 +95,7 @@ setDataTopX.loc[setDataTopX['MLx']==999,"MLx"] = np.nan
 setDataTopX.loc[setDataTopX['RLx']==999,"RLx"] = np.nan
 setDataTopX.loc[setDataTopX['XGx']==999,"XGx"] = np.nan
 setDataTopX.loc[setDataTopX['CLx']==999,"CLx"] = np.nan
+setDataTopX.loc[setDataTopX['PLx']==999,"PLx"] = np.nan
 
 # dump this to CSV file, top directory:
 outCsvFilename = 'csv_Top_X_pokemon_by_leagues.csv'
@@ -100,4 +114,6 @@ print("")
 print("This is the list to TRASH pokemon not for PvP - ALL ranked above the top "+str(pvpTopX))
 print(trashListString)
 
-
+allLeagues = ['GLx','XGx','RLx','ULx','PLx','MLx','CLx']
+for lg in allLeagues:
+    match.printTopxForLeague(setDataTopXRank,lg,pvpTopX)
