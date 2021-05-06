@@ -114,6 +114,16 @@ print("")
 print("This is the list to TRASH pokemon not for PvP - ALL ranked above the top "+str(pvpTopX))
 print(trashListString)
 
+
 allLeagues = ['GLx','XGx','RLx','ULx','PLx','MLx','CLx']
+
+leagueRankFilename = 'allLeaguesRankedPokemonSearchString.txt'
+text_file = open(leagueRankFilename, "w")
+text_file.write("\n all Leagues Ranked - Pokemon Search String \n")
+
 for lg in allLeagues:
-    match.printTopxForLeague(setDataTopXRank,lg,pvpTopX)
+    printThis = match.printTopxForLeague(setDataTopXRank,lg,pvpTopX)
+    print(printThis)
+    text_file.write(printThis)
+    
+text_file.close()

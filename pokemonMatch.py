@@ -137,7 +137,7 @@ def getPvpPokeData(pvpPokeFilename,typeFilter,topX):
     #pvpPoke = pvpPoke.rename(columns={'Fast Move': 'Fast move'})
     
     # get the number, type and name from the lookup:
-    PokemonNoType =  getPokemonNumberType()
+    PokemonNoType =  getPokemonNumberType(filterReleased=False)
 
     # match pokemon to type:
     pvpPokeType = pvpPoke.merge(PokemonNoType,how='inner', on=['Pokemon'])
@@ -393,7 +393,7 @@ def getNoCpFromResults(Result):
 
     return
     
-def getPokemonNumberType():
+def getPokemonNumberType(filterReleased=True):
     """ 
     Input: none 
     Method: inputs database of pokemon information.
@@ -417,9 +417,12 @@ def getPokemonNumberType():
     lookupData.astype({'#': 'int32'}).dtypes
     
     lookupNameNumber = lookupData[["Name","#","Type 1","Type 2","Released_2021_03_13"]]
+
+    if filterReleased==True:
+        # drop those that are not released yet:
+        lookupNameNumber = lookupNameNumber[lookupNameNumber["Released_2021_03_13"]==True]
+        
                                    
-    # drop those that are not released yet:
-    lookupNameNumber = lookupNameNumber[lookupNameNumber["Released_2021_03_13"]==True]
     
     # rename for better handling of spaces:
     lookupNameNumber.rename(columns={"Type 1": "Type1"}, inplace=True)
@@ -938,19 +941,16 @@ def dropDuplicatesPlz(myDF,minmax):
 def printTopxForLeague(setDataTopXRank,league,pvpTopX):
     
     newData = setDataTopXRank[["Pokemon","#",league]].copy()
-    newData.sort_values(by=[league], inplace=True, ascending=True)
+    newData.sort_values(by=[league,], inplace=True, ascending=True)
     # extract topX if required:
     pvpResult = newData.head(pvpTopX)
     
     listOfPokemon = pvpResult["#"]
-    listOfPokemon = list(set(listOfPokemon))
-    listOfPokemon = reversed(listOfPokemon)
+    listOfPokemon = list(dict.fromkeys(listOfPokemon))
+    #listOfPokemon = reversed(listOfPokemon)
     
     returnString = ','.join([str(int(n)) for n in listOfPokemon])
     
-    print("\n")
-    print("Result for league: " + league)
-    print("\n")
-    print(returnString)
-    
-    return
+    returnString = "\n" + "Result for league: " + league + "\n" + returnString + "\n"
+       
+    return returnString

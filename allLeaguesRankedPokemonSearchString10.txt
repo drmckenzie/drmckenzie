@@ -1,0 +1,23 @@
+
+ all Leagues Ranked - Pokemon Search String - top 10 
+
+Result for league: GLx
+308,184,618,334,302,593,411,386,260
+
+Result for league: XGx
+308,411,379,334,488,202,386,68,288,302
+
+Result for league: RLx
+108,478,488,377,97,460,113,386,334
+
+Result for league: ULx
+488,460,487,618,663,379,260,630,208
+
+Result for league: PLx
+460,618,260,630,593,706,426,598
+
+Result for league: MLx
+149,143,468,445,130,809,473
+
+Result for league: CLx
+383,809,143,487,483,149,250,150,484
