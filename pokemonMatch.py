@@ -951,6 +951,6 @@ def printTopxForLeague(setDataTopXRank,league,pvpTopX):
     
     returnString = ','.join([str(int(n)) for n in listOfPokemon])
     
-    returnString = "\n" + "Result for league: " + league + "\n" + returnString + "\n"
+    returnString = "\n" + "Result for league: " + league + "\n \n" + returnString + "\n"
        
     return returnString
