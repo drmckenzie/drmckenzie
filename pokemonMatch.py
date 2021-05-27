@@ -773,6 +773,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     classicFilename = 'data/master_classic_overall.csv'
     premierFilename = 'data/ultra_premier_overall.csv'
      
+    kantoFilename = 'data/kanto_overall.csv'
+     
     # load data
     greatData=getPvpPokeData(greatFilename,typeFilter,topX)
     ultraData=getPvpPokeData(ultraFilename,typeFilter,topX)
@@ -782,6 +784,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     remixData=getPvpPokeData(remixFilename,typeFilter,topX)
     classicData=getPvpPokeData(classicFilename,typeFilter,topX)
     premierData=getPvpPokeData(premierFilename,typeFilter,topX)
+    
+    kantoData=getPvpPokeData(kantoFilename,typeFilter,topX)
     
     #reduce data
     columnList=["Pokemon","#","Score"]
@@ -795,6 +799,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     classicData = classicData[columnList]
     premierData = premierData[columnList]
      
+    kantoData = kantoData[columnList]
+     
     greatData.rename(columns={"Score": "GL"},inplace=True)
     ultraData.rename(columns={"Score": "UL"},inplace=True)
     masterData.rename(columns={"Score": "ML"},inplace=True)
@@ -803,6 +809,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     remixData.rename(columns={"Score": "XG"},inplace=True)
     classicData.rename(columns={"Score": "CL"},inplace=True)
     premierData.rename(columns={"Score": "PL"},inplace=True)
+     
+    kantoData.rename(columns={"Score": "KL"},inplace=True)
      
     # add index for all dataframes
     greatData   = addNewIndexCol(greatData,'GLx')
@@ -813,6 +821,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     remixData   = addNewIndexCol(remixData,'XGx')
     classicData = addNewIndexCol(classicData,'CLx')
     premierData = addNewIndexCol(premierData,'PLx')
+    
+    kantoData = addNewIndexCol(kantoData,'KLx')
     
     setDataTopX = pd.DataFrame()
      
@@ -826,17 +836,19 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     setDataTopX=setDataTopX.merge(classicData, left_on=mergeList, right_on=mergeList, how="outer")
     setDataTopX=setDataTopX.merge(premierData, left_on=mergeList, right_on=mergeList, how="outer")
      
+    setDataTopX=setDataTopX.merge(kantoData, left_on=mergeList, right_on=mergeList, how="outer")
+     
     # control the type:
     setDataTopX.astype({'#': 'int32'}).dtypes
      
     #reorder column order:
     #setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','GLx','XG','XGx','RL','RLx','UL','ULx','ML','MLx','CL','CLx'])
-    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','XG','RL','UL','PL','ML','CL','GLx','XGx','RLx','ULx','PLx','MLx','CLx'])
+    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','XG','RL','KL','UL','PL','ML','CL','GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx'])
      
     import numpy as np
      
     # rank them by usefulness
-    setDataTopX['SumRank'] = setDataTopX.loc[:,['GLx','XGx','RLx','ULx','PLx','MLx','CLx']].sum(axis=1)
+    setDataTopX['SumRank'] = setDataTopX.loc[:,['GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx']].sum(axis=1)
     setDataTopX.loc[setDataTopX['SumRank'] == 0] = np.nan
     setDataTopX.sort_values(by=['SumRank'],ascending=True,inplace=True)
      
@@ -850,13 +862,15 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     setDataTopX.loc[setDataTopX['CLx'].isna(),"CLx"] = int(999)
     setDataTopX.loc[setDataTopX['PLx'].isna(),"PLx"] = int(999)
      
+    setDataTopX.loc[setDataTopX['KLx'].isna(),"KLx"] = int(999)
+     
     # control what gets shown:
     StX = str(pvpTopX)
     #dispDataTopX = setDataTopX.query('GLx <= 5' )
     #trashDataTopX = setDataTopX.query('GLx > 10')+str(pvpTopX) )
      
-    dispDataTopX  = setDataTopX.query('GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or ULx<='+StX+' or PLx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
-    trashDataTopX = setDataTopX.query('GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and ULx>'+StX+' and PLx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
+    dispDataTopX  = setDataTopX.query('GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or KLx<='+StX+' or ULx<='+StX+' or PLx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
+    trashDataTopX = setDataTopX.query('GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and KLx>'+StX+' and ULx>'+StX+' and PLx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
      
     print("The score cutoff for top number of pokemon in the league is set at top: "+str(pvpTopX))
     print("")
@@ -889,6 +903,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
             setDataTopX.loc[i,"Best"].append("XG")
         if setDataTopX.loc[i,"RLx"]<pvpTopX:
             setDataTopX.loc[i,"Best"].append("RL")
+        if setDataTopX.loc[i,"KLx"]<pvpTopX:
+            setDataTopX.loc[i,"Best"].append("KL")
         if setDataTopX.loc[i,"ULx"]<pvpTopX:
             setDataTopX.loc[i,"Best"].append("UL")
         if setDataTopX.loc[i,"PLx"]<pvpTopX:
@@ -926,7 +942,7 @@ def dropDuplicatesPlz(myDF,minmax):
     #listOfPokemon = ["Machamp","Medicham"]
     colsToOperate = myDF.columns[2:-3]
     for mon in listOfPokemon:
-        #print(mon)
+        print(mon)
         for col in colsToOperate:
             if minmax.lower() == "min":
                 minmaxValue = myDF.loc[myDF.Pokemon==mon,col].min()
