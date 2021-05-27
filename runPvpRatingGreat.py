@@ -7,7 +7,7 @@ pvpTopX = 100
 setDataTopXGreatRank  = setDataTopXRank[['Pokemon', '#', 'GLx', 'XGx', 'RLx', 'KLx', 'SumRank', 'Best', 'BestNo']].copy()
 
 # drop nans if all columns are nan
-setDataTopXGreatRank = setDataTopXGreatRank.dropna(how='all')
+setDataTopXGreatRank = setDataTopXGreatRank.dropna(how='all',subset=['GLx', 'XGx', 'RLx', 'KLx'])
 setDataTopXGreatRank = setDataTopXGreatRank.reset_index(drop=True)
                                          
 # reindex sumrank
