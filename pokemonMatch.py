@@ -934,6 +934,47 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     
     return setDataTopX,keepList,trashList
 
+def whichLeagues(setDataTopX,thisLeague,pvpTopX):
+    # which leagues is good for this pokemon?
+    # using the top x result, I think this is more consistent.
+    
+    # setDataTopX = dfInput.copy()
+    setDataTopX["Best"] = ''
+    setDataTopX["BestNo"] = 0
+    for i in range(len(setDataTopX)):
+        setDataTopX.loc[i,"Best"] = [['']]
+        #print(setDataTopX.loc[i,"Pokemon"])
+        if thisLeague=='great':        
+            if setDataTopX.loc[i,"GLx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("GL")
+            if setDataTopX.loc[i,"XGx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("XG")
+            if setDataTopX.loc[i,"RLx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("RL")
+            if setDataTopX.loc[i,"KLx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("KL")
+        if thisLeague=='ultra':        
+            if setDataTopX.loc[i,"ULx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("UL")
+            if setDataTopX.loc[i,"PLx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("PL")
+        if thisLeague=='master':        
+            if setDataTopX.loc[i,"MLx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("ML")
+            if setDataTopX.loc[i,"CLx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("CL")
+        if setDataTopX.loc[i,"Best"]==['']:
+            setDataTopX.loc[i,"Best"].append("-")
+        # remove the first ''
+        setDataTopX.loc[i,"Best"].pop(0)
+        setDataTopX.loc[i,"BestNo"] = len(setDataTopX.loc[i,"Best"])
+        if setDataTopX.loc[i,"Best"]==['-']:
+            setDataTopX.loc[i,"BestNo"] = 0
+     
+    setDataTopX.sort_values(by=['BestNo','SumRank'],ascending=(False,True),inplace=True)
+    
+    return setDataTopX
+
 def dropDuplicatesPlz(myDF,minmax):
     
     # go through the data, for each pokemon, keep the higest score in each column.

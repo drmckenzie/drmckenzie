@@ -39,7 +39,7 @@ stringFooter = f.read()
 f.close()
 
 stringHeader += "<p>Best Pokemon Go moves for PvP (league battles), results for top "+str(int(pvpTopX))+" pokemon in each league listed</p> \n\n <p>Search on all fields of the table: Name, Number, Score. <b>(click table header to sort)</b> </p> \n \n"
-stringHeader += "<p>Leagues:<br>GL=Great League ; \nXG=Remix (great) ; \nRL=Retro (Great) ; \nUL=Ultra League ; \nPL=Premier (Ultra) ; \nML=Master League ; \nCL=Classic Master </p> \n"
+stringHeader += "<p>Leagues:<br>GL=Great League ; \nXG=Remix (great) ; \nRL=Retro (Great) ; \nKL=Kanto League ; \nUL=Ultra League ; \nPL=Premier (Ultra) ; \nML=Master League ; \nCL=Classic Master </p> \n"
 stringHeaderScore = stringHeader + "<p>Note: GL is the <b>score</b> in that league (high=good). "
 stringHeaderRank = stringHeader + "GLx is the <b>place</b> in that league (low=good). "
 stringHeaderFinal = "<b>Best</b> is which leagues the pokemon are in the top x of, <b>BestNo</b> is how many leagues. </p>"
