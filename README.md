@@ -45,7 +45,7 @@ This is a series of pages that list the best moves for PvE (raids) and PvP:
 
 - [Combined PvP league lookup by rank in Great Leagues (Great, Retro, Remix, Kanto)][PvP_leagues_rank_Great]
 - [Combined PvP league lookup by rank in Ultra Leagues (Ultra, Premier)][PvP_leagues_rank_Ultra]
-- [Combined PvP league lookup by rank in Master Leagues (Master, Classic)][PvP_leagues_rank_Ultra]
+- [Combined PvP league lookup by rank in Master Leagues (Master, Classic)][PvP_leagues_rank_Master]
 
 #### PvP individual moves
 
