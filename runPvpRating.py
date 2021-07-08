@@ -46,28 +46,28 @@ stringHeaderFinal = "<b>Best</b> is which leagues the pokemon are in the top x o
 stringHeaderScore += stringHeaderFinal
 stringHeaderRank += stringHeaderFinal
 
-setDataTopXRank  = setDataTopX[['Pokemon', '#', 'GLx', 'XGx', 'RLx', 'KLx', 'ULx', 'PLx', 'MLx', 'CLx', 'SumRank', 'Best', 'BestNo']].copy()
-setDataTopXScore = setDataTopX[['Pokemon', '#', 'GL',  'XG',  'RL',  'KL',  'UL',  'PL',  'ML',  'CL',  'SumRank', 'Best', 'BestNo']].copy()
+setDataTopXRank  = setDataTopX[['Pokemon', '#', 'ELx', 'GLx', 'XGx', 'RLx', 'KLx', 'ULx', 'PLx', 'MLx', 'CLx', 'SumRank', 'Best', 'BestNo']].copy()
+setDataTopXScore = setDataTopX[['Pokemon', '#', 'EL',  'GL',  'XG',  'RL',  'KL',  'UL',  'PL',  'ML',  'CL',  'SumRank', 'Best', 'BestNo']].copy()
 
 # go through the data, for each pokemon, keep the higest score in each column.
 setDataTopXRank  = match.dropDuplicatesPlz(setDataTopXRank,"min")
 setDataTopXScore = match.dropDuplicatesPlz(setDataTopXScore,"max")
 
 # reindex sumrank
-setDataTopXRank['SumRank'] = setDataTopXRank.loc[:,['GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx']].sum(axis=1)
+setDataTopXRank['SumRank'] = setDataTopXRank.loc[:,['ELx','GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx']].sum(axis=1)
 colsToOperate = setDataTopXRank.columns[2:-3]
 setDataTopXRank.drop_duplicates(subset=colsToOperate,inplace=True, keep='first')
  
-setDataTopXScore['SumRank'] = setDataTopXScore.loc[:,['GL','XG','RL','KL','UL','PL','ML','CL']].sum(axis=1)
+setDataTopXScore['SumRank'] = setDataTopXScore.loc[:,['EL','GL','XG','RL','KL','UL','PL','ML','CL']].sum(axis=1)
 colsToOperate = setDataTopXScore.columns[2:-3]
 setDataTopXScore.drop_duplicates(subset=colsToOperate,inplace=True, keep='first')
                                 
 # ugh, this is so hacky. Forcing the html formats to behave:
 # sort by rank
-rankFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'PLx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'KLx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format}
+rankFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'ELx': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'PLx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'KLx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format}
 rankStringTable = setDataTopXRank.to_html(classes="sortable", table_id="myTable", index=False, formatters=rankFormats)
 # sort by score
-scoreFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GL': '{:,.0f}'.format,'UL': '{:,.0f}'.format,'PL': '{:,.0f}'.format,'ML': '{:,.0f}'.format,'RL': '{:,.0f}'.format,'XG': '{:,.0f}'.format,'KL': '{:,.0f}'.format,'CL': '{:,.0f}'.format}
+scoreFormats = {'#': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'EL': '{:,.0f}'.format,'GL': '{:,.0f}'.format,'UL': '{:,.0f}'.format,'PL': '{:,.0f}'.format,'ML': '{:,.0f}'.format,'RL': '{:,.0f}'.format,'XG': '{:,.0f}'.format,'KL': '{:,.0f}'.format,'CL': '{:,.0f}'.format}
 scoreStringTable = setDataTopXScore.to_html(classes="sortable", table_id="myTable", index=False, formatters=scoreFormats)
 
 stringInput =  "\n<input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search table for names, moves\"> \n</input> \n"
@@ -89,6 +89,7 @@ text_file.write(scoreFileCat)
 text_file.close()
 
 # set the league data back to NaN before export:
+setDataTopX.loc[setDataTopX['GLx']==999,"ELx"] = np.nan
 setDataTopX.loc[setDataTopX['GLx']==999,"GLx"] = np.nan
 setDataTopX.loc[setDataTopX['ULx']==999,"ULx"] = np.nan
 setDataTopX.loc[setDataTopX['MLx']==999,"MLx"] = np.nan
@@ -116,7 +117,7 @@ print("This is the list to TRASH pokemon not for PvP - ALL ranked above the top 
 print(trashListString)
 
 
-allLeagues = ['GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx']
+allLeagues = ['ELx','GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx']
 
 # return the top 100 PVP pokemon
 leagueRankFilename = 'allLeaguesRankedPokemonSearchString100.txt'
@@ -128,13 +129,15 @@ for lg in allLeagues:
     text_file.write(printThis)
 text_file.close()
 
+# return the top 50 PVP pokemon
+pvpTopX = 50
+match.writeTopXPvpToFile(pvpTopX,allLeagues,setDataTopXRank)
+
+# return the top 25 PVP pokemon
+pvpTopX = 25
+match.writeTopXPvpToFile(pvpTopX,allLeagues,setDataTopXRank)
+
 # return the top 10 PVP pokemon
 pvpTopX = 10
-leagueRankFilename = 'allLeaguesRankedPokemonSearchString10.txt'
-text_file = open(leagueRankFilename, "w")
-text_file.write("\n all Leagues Ranked - Pokemon Search String - top 10 \n")
-for lg in allLeagues:
-    printThis = match.printTopxForLeague(setDataTopXRank,lg,pvpTopX)
-    print(printThis)
-    text_file.write(printThis)
-text_file.close()
+match.writeTopXPvpToFile(pvpTopX,allLeagues,setDataTopXRank)
+

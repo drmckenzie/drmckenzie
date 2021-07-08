@@ -764,6 +764,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     import pandas as pd
      
     # PvPpoke filenames
+    elementFilename = 'data/element_overall.csv'
+        
     greatFilename = 'data/great_overall.csv'
     ultraFilename = 'data/ultra_overall.csv'
     masterFilename = 'data/master_overall.csv'
@@ -776,6 +778,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     kantoFilename = 'data/kanto_overall.csv'
      
     # load data
+    elementData=getPvpPokeData(elementFilename,typeFilter,topX)
+
     greatData=getPvpPokeData(greatFilename,typeFilter,topX)
     ultraData=getPvpPokeData(ultraFilename,typeFilter,topX)
     masterData=getPvpPokeData(masterFilename,typeFilter,topX)
@@ -790,6 +794,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     #reduce data
     columnList=["Pokemon","#","Score"]
     
+    elementData = elementData[columnList]
+
     greatData = greatData[columnList]
     ultraData = ultraData[columnList]
     masterData = masterData[columnList]
@@ -801,6 +807,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
      
     kantoData = kantoData[columnList]
      
+    elementData.rename(columns={"Score": "EL"},inplace=True)
+
     greatData.rename(columns={"Score": "GL"},inplace=True)
     ultraData.rename(columns={"Score": "UL"},inplace=True)
     masterData.rename(columns={"Score": "ML"},inplace=True)
@@ -813,6 +821,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     kantoData.rename(columns={"Score": "KL"},inplace=True)
      
     # add index for all dataframes
+    elementData   = addNewIndexCol(elementData,'ELx')
+
     greatData   = addNewIndexCol(greatData,'GLx')
     ultraData   = addNewIndexCol(ultraData,'ULx')
     masterData  = addNewIndexCol(masterData,'MLx')
@@ -837,22 +847,26 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     setDataTopX=setDataTopX.merge(premierData, left_on=mergeList, right_on=mergeList, how="outer")
      
     setDataTopX=setDataTopX.merge(kantoData, left_on=mergeList, right_on=mergeList, how="outer")
+
+    setDataTopX=setDataTopX.merge(elementData, left_on=mergeList, right_on=mergeList, how="outer")
      
     # control the type:
     setDataTopX.astype({'#': 'int32'}).dtypes
      
     #reorder column order:
     #setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','GLx','XG','XGx','RL','RLx','UL','ULx','ML','MLx','CL','CLx'])
-    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','XG','RL','KL','UL','PL','ML','CL','GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx'])
+    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','EL','GL','XG','RL','KL','UL','PL','ML','CL','ELx','GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx'])
      
     import numpy as np
      
     # rank them by usefulness
-    setDataTopX['SumRank'] = setDataTopX.loc[:,['GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx']].sum(axis=1)
+    setDataTopX['SumRank'] = setDataTopX.loc[:,['ELx','GLx','XGx','RLx','KLx','ULx','PLx','MLx','CLx']].sum(axis=1)
     setDataTopX.loc[setDataTopX['SumRank'] == 0] = np.nan
     setDataTopX.sort_values(by=['SumRank'],ascending=True,inplace=True)
      
     # make the NaN a big value:
+    setDataTopX.loc[setDataTopX['ELx'].isna(),"ELx"] = int(999)
+
     setDataTopX.loc[setDataTopX['GLx'].isna(),"GLx"] = int(999)
     setDataTopX.loc[setDataTopX['ULx'].isna(),"ULx"] = int(999)
     setDataTopX.loc[setDataTopX['MLx'].isna(),"MLx"] = int(999)
@@ -869,8 +883,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     #dispDataTopX = setDataTopX.query('GLx <= 5' )
     #trashDataTopX = setDataTopX.query('GLx > 10')+str(pvpTopX) )
      
-    dispDataTopX  = setDataTopX.query('GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or KLx<='+StX+' or ULx<='+StX+' or PLx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
-    trashDataTopX = setDataTopX.query('GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and KLx>'+StX+' and ULx>'+StX+' and PLx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
+    dispDataTopX  = setDataTopX.query('ELx<='+StX+' or GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or KLx<='+StX+' or ULx<='+StX+' or PLx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
+    trashDataTopX = setDataTopX.query('ELx>'+StX+' and GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and KLx>'+StX+' and ULx>'+StX+' and PLx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
      
     print("The score cutoff for top number of pokemon in the league is set at top: "+str(pvpTopX))
     print("")
@@ -897,6 +911,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     setDataTopX["BestNo"] = 0
     for i in range(len(setDataTopX)):
         setDataTopX.loc[i,"Best"] = [['']]
+        if setDataTopX.loc[i,"ELx"]<pvpTopX:
+            setDataTopX.loc[i,"Best"].append("EL")
         if setDataTopX.loc[i,"GLx"]<pvpTopX:
             setDataTopX.loc[i,"Best"].append("GL")
         if setDataTopX.loc[i,"XGx"]<pvpTopX:
@@ -1011,3 +1027,16 @@ def printTopxForLeague(setDataTopXRank,league,pvpTopX):
     returnString = "\n" + "Result for league: " + league + "\n \n" + returnString + "\n"
        
     return returnString
+
+def writeTopXPvpToFile(pvpTopX,allLeagues,setDataTopXRank):
+    # return the top 50 PVP pokemon
+    # pvpTopX = 50
+    leagueRankFilename = 'allLeaguesRankedPokemonSearchString'+str(pvpTopX)+'.txt'
+    text_file = open(leagueRankFilename, "w")
+    text_file.write("\n all Leagues Ranked - Pokemon Search String - top "+str(pvpTopX)+" \n")
+    for lg in allLeagues:
+        printThis = printTopxForLeague(setDataTopXRank,lg,pvpTopX)
+        print(printThis)
+        text_file.write(printThis)
+    text_file.close()
+

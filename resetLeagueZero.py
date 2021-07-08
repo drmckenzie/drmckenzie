@@ -1,5 +1,6 @@
 
 # set the league data back to NaN before export:
+setDataTopXRank.loc[setDataTopXRank['ELx']==999,"ELx"] = 0
 setDataTopXRank.loc[setDataTopXRank['GLx']==999,"GLx"] = 0
 setDataTopXRank.loc[setDataTopXRank['XGx']==999,"XGx"] = 0
 setDataTopXRank.loc[setDataTopXRank['RLx']==999,"RLx"] = 0
