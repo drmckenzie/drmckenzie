@@ -1,0 +1,211 @@
+Pokemon,Score,Type 1,Type 2,Attack,Defense,Stamina,Stat Product,Level,Fast Move,Charged Move 1,Charged Move 2,Charged Move 1 Count,Charged Move 2 Count,Buddy Distance,Charged Move Cost
+Azumarill,94.1,water,fairy,93.7,134.1,190,2387435,43.5,Bubble,Ice Beam,Play Rough,5,6,3,50000
+Nidoqueen (Shadow),93,poison,ground,117.8,116.5,139,1908186,22,Poison Jab,Poison Fang,Stone Edge,5,8,3,50000
+Golbat,92.9,poison,flying,118.7,113.7,140,1888899,29,Wing Attack,Poison Fang,Shadow Ball,5,8,1,10000
+Mawile,92.6,steel,fairy,125.9,121.2,117,1784529,38.5,Fire Fang,Power-Up Punch,Play Rough,7,12,5,75000
+Beedrill (Shadow),91.4,bug,poison,127.6,106.2,129,1749201,31,Poison Jab,Drill Run,X-Scissor,7,5,1,10000
+Jellicent,90.9,water,ghost,106.7,124.3,157,2082451,24,Bubble,Bubble Beam,Shadow Ball,4,5,3,50000
+Mandibuzz,90.9,dark,flying,92.3,149.2,176,2424943,27,Air Slash,Aerial Ace,Foul Play,5,5,5,75000
+Nidoqueen,90.9,poison,ground,117.8,116.5,139,1908186,22,Poison Jab,Poison Fang,Stone Edge,5,8,3,50000
+Golbat (Shadow),90.8,poison,flying,118.7,113.7,140,1888899,29,Wing Attack,Poison Fang,Shadow Ball,5,8,1,10000
+Azumarill,90.6,water,fairy,95.3,130.7,188,2341657,39.5,Bubble,Ice Beam,Play Rough,5,6,3,50000
+Ninetales (Alolan),90.6,ice,fairy,115.1,133.6,126,1936253,24.5,Powder Snow,Weather Ball (Ice),Dazzling Gleam,5,9,3,50000
+Tentacruel,90.5,water,poison,110.1,139.9,132,2032660,23.5,Poison Jab,Acid Spray,Hydro Pump,7,11,3,50000
+Froslass,89.7,ice,ghost,122.6,115.6,128,1813850,27.5,Powder Snow,Avalanche,Shadow Ball,6,7,3,50000
+Forretress,89.1,bug,steel,110.2,141.6,130,2028758,25,Bug Bite,Mirror Shot,Earthquake,12,22,5,75000
+Qwilfish,89,water,poison,130.5,105.5,123,1693578,27,Poison Sting,Aqua Tail,Ice Beam,4,7,3,50000
+Grimer (Alolan),88.9,poison,dark,123.6,86,171,1818779,49,Poison Jab,Crunch,Sludge Bomb,7,8,3,50000
+Scizor (Shadow),88.9,bug,steel,137.9,110.3,106,1612512,18.5,Bullet Punch,Night Slash,Iron Head,5,8,5,75000
+Wormadam (Trash),88.8,bug,steel,105.2,150.9,134,2126928,42.5,Bug Bite,Iron Head,Bug Buzz,17,20,1,10000
+Marowak (Alolan),88.7,fire,ghost,110.8,145,126,2025310,32,Fire Spin,Shadow Bone,Bone Club,5,4,3,50000
+Sableye,88.3,dark,ghost,121,123.5,124,1853355,45.5,Shadow Claw,Foul Play,Return,6,9,5,75000
+Umbreon,88.3,dark,none,90.2,177,155,2475791,27,Snarl,Foul Play,Last Resort,4,5,5,75000
+Skuntank,87.8,poison,dark,121.7,95.2,157,1819546,23.5,Poison Jab,Crunch,Flamethrower,7,8,3,50000
+Skuntank (Shadow),87.8,poison,dark,121.7,95.2,157,1819546,23.5,Poison Jab,Crunch,Flamethrower,7,8,3,50000
+Muk (Alolan),87.7,poison,dark,117.3,111.3,146,1906470,20.5,Poison Jab,Acid Spray,Dark Pulse,7,8,3,50000
+Beedrill,87.6,bug,poison,127.6,106.2,129,1749201,31,Poison Jab,Drill Run,X-Scissor,7,5,1,10000
+Cofagrigus,87.4,ghost,none,112.2,168.3,106,2002086,25,Shadow Claw,Shadow Ball,Psychic,7,7,3,50000
+Pawniard,87.4,dark,steel,132,107.8,118,1678084,49,Fury Cutter,Night Slash,Iron Head,9,13,5,75000
+Wigglytuff,87,normal,fairy,115.8,75.5,220,1924765,29,Charm,Ice Beam,Play Rough,10,10,1,10000
+Mawile (Shadow),86.4,steel,fairy,125.9,121.2,117,1784529,38.5,Fire Fang,Power-Up Punch,Play Rough,7,12,5,75000
+Dragalge,86.1,poison,dragon,117.9,139.9,115,1895881,23.5,Dragon Tail,Aqua Tail,Outrage,4,7,3,50000
+Drapion,86.1,poison,dark,118.5,136.5,117,1892269,23,Poison Sting,Aqua Tail,Sludge Bomb,4,6,5,75000
+Nidorina,85.6,poison,none,110.9,113.4,157,1975496,50,Poison Sting,Poison Fang,Sludge Bomb,4,6,3,50000
+Aromatisse,85.5,fairy,none,116.5,108,153,1924550,24,Charm,Psychic,Thunderbolt,10,10,3,50000
+Clefable,85.5,fairy,none,117.2,111.5,146,1908090,23,Charm,Meteor Mash,Moonblast,9,10,1,10000
+Drifblim,85.2,ghost,flying,119.8,75,208,1867826,23,Hex,Icy Wind,Shadow Ball,4,5,5,75000
+Sylveon,85.2,fairy,none,118.9,121.2,131,1888899,18.5,Charm,Psyshock,Moonblast,8,10,5,75000
+Muk (Shadow),85,poison,none,117.3,111.3,146,1906470,20.5,Poison Jab,Thunder Punch,Dark Pulse,6,8,3,50000
+Crustle,84.8,bug,rock,120.9,134.1,114,1848465,22,Fury Cutter,X-Scissor,Rock Slide,9,12,1,10000
+Galvantula,84.8,bug,electric,139,93.8,124,1615746,25.5,Volt Switch,Discharge,Lunge,3,3,3,50000
+Gengar,84.7,ghost,poison,156.6,94.3,97,1433181,19,Shadow Claw,Shadow Punch,Sludge Bomb,5,7,3,50000
+Drapion (Shadow),84.5,poison,dark,118.5,136.5,117,1892269,23,Poison Sting,Aqua Tail,Sludge Bomb,4,6,5,75000
+Haunter,84.5,ghost,poison,161.2,85.5,100,1378532,28,Shadow Claw,Shadow Punch,Sludge Bomb,5,7,3,50000
+Slurpuff,84.5,fairy,none,117.4,118.1,138,1912211,25.5,Charm,Flamethrower,Play Rough,10,10,3,50000
+Forretress (Shadow),84.3,bug,steel,110.2,141.6,130,2028758,25,Bug Bite,Mirror Shot,Earthquake,12,22,5,75000
+Scizor,84.3,bug,steel,137.9,110.3,106,1612512,18.5,Bullet Punch,Night Slash,Iron Head,5,8,5,75000
+Escavalier,84.1,bug,steel,133.9,116.8,107,1673454,19.5,Counter,Drill Run,Megahorn,7,8,3,50000
+Dwebble,84,bug,rock,111.8,120.2,127,1705533,50,Smack Down,Rock Blast,X-Scissor,5,5,1,10000
+Muk,84,poison,none,117.3,111.3,146,1906470,20.5,Poison Jab,Thunder Punch,Dark Pulse,6,8,3,50000
+Crobat,83.9,poison,flying,121.8,115.7,130,1832248,21,Air Slash,Poison Fang,Shadow Ball,4,7,1,10000
+Tyranitar (Shadow),83.6,rock,dark,130.2,109.4,121,1723417,14.5,Smack Down,Stone Edge,Crunch,7,6,5,75000
+Grimer (Shadow),83.5,poison,none,123.6,86,171,1818779,49,Poison Jab,Mud Bomb,Sludge Bomb,6,8,3,50000
+Swalot,83.5,poison,none,104.1,123.4,168,2158208,28.5,Infestation,Ice Beam,Sludge Bomb,5,5,1,10000
+Vullaby,83.1,dark,flying,100.8,129.4,157,2048662,50,Air Slash,Brave Bird,Foul Play,7,5,5,75000
+Seviper,82.7,poison,none,138.8,89.5,130,1616076,27,Poison Jab,Poison Fang,Crunch,5,7,3,50000
+Ariados,82.5,bug,poison,124.7,102,141,1793573,34,Poison Sting,Cross Poison,Megahorn,4,7,1,10000
+Toxicroak,82.4,poison,fighting,136.6,91.5,131,1636876,22,Counter,Mud Bomb,Sludge Bomb,6,8,3,50000
+Spritzee,82.2,fairy,none,105,107.6,168,1898008,50,Charm,Thunderbolt,Draining Kiss,10,10,3,50000
+Grimer,82.1,poison,none,121.5,88,171,1827419,49.5,Poison Jab,Mud Bomb,Sludge Bomb,6,8,3,50000
+Zweilous,82,dark,dragon,121,109.2,140,1849588,31,Dragon Breath,Body Slam,Dark Pulse,12,17,5,75000
+Granbull (Shadow),81.9,fairy,none,135.3,87.7,139,1650182,22,Charm,Close Combat,Crunch,8,8,3,50000
+Crobat (Shadow),81.8,poison,flying,121.8,115.7,130,1832248,21,Air Slash,Poison Fang,Shadow Ball,4,7,1,10000
+Tyranitar,81.8,rock,dark,130.2,109.4,121,1723417,14.5,Smack Down,Stone Edge,Crunch,7,6,5,75000
+Granbull,81.6,fairy,none,135.3,87.7,139,1650182,22,Charm,Close Combat,Crunch,8,8,3,50000
+Scrafty,81,dark,fighting,110.4,155.4,117,2007526,24.5,Counter,Foul Play,Power-Up Punch,7,5,3,50000
+Obstagoon,80.8,dark,normal,112.6,126.7,138,1969669,21,Counter,Night Slash,Gunk Shot,5,11,3,10000
+Genesect,80.7,bug,steel,141.1,111.7,100,1575465,16,Fury Cutter,Magnet Bomb,X-Scissor,12,9,20,100000
+Dusclops,80.4,ghost,none,103.1,198.9,106,2173343,43,Hex,Fire Punch,Shadow Punch,4,3,3,50000
+Honchkrow,80.4,dark,flying,150.6,68.3,145,1492462,20.5,Snarl,Brave Bird,Sky Attack,5,4,3,50000
+Nidorina (Shadow),80.4,poison,none,110.9,113.4,157,1975496,50,Poison Sting,Poison Fang,Sludge Bomb,4,6,3,50000
+Scolipede,80.2,bug,poison,132.6,121.1,105,1686037,23,Poison Jab,X-Scissor,Megahorn,5,8,1,10000
+Sableye (Shadow),79.4,dark,ghost,121,123.5,124,1853355,45.5,Shadow Claw,Foul Play,Shadow Sneak,6,6,5,75000
+Bisharp,79.2,dark,steel,139.2,111.5,103,1598638,19.5,Snarl,Dark Pulse,Iron Head,4,4,5,75000
+Dusclops (Shadow),78.4,ghost,none,103.1,198.9,106,2173343,43,Hex,Fire Punch,Shadow Punch,4,3,3,50000
+Dustox,78.3,bug,poison,95,148.7,142,2005436,50,Confusion,Sludge Bomb,Bug Buzz,5,5,1,10000
+Nidorino,78,poison,none,124.2,103.7,140,1803300,46.5,Poison Jab,Sludge Bomb,Horn Attack,8,5,3,50000
+Sableye,78,dark,ghost,123.3,119.3,120,1765496,40,Shadow Claw,Foul Play,Shadow Sneak,6,6,5,75000
+Gardevoir (Shadow),77.9,psychic,fairy,137.2,114.5,104,1633015,18,Charm,Synchronoise,Shadow Ball,9,10,5,75000
+Chandelure,77.4,ghost,fire,151.4,106.9,91,1472749,16.5,Incinerate,Flame Charge,Overheat,3,3,5,75000
+Nidorino (Shadow),77.4,poison,none,124.2,103.7,140,1803300,46.5,Poison Jab,Sludge Bomb,Horn Attack,8,5,3,50000
+Houndoom (Shadow),76.9,dark,fire,140.8,94.9,119,1589764,21,Snarl,Flamethrower,Crunch,5,4,3,50000
+Houndoom,76.8,dark,fire,140.8,94.9,119,1589764,21,Snarl,Flamethrower,Crunch,5,4,3,50000
+Durant,76.5,bug,steel,135.9,121.2,100,1647192,21,Bug Bite,Stone Edge,X-Scissor,19,12,3,50000
+Drifloon,76.4,ghost,flying,110.9,79.8,186,1646946,50,Hex,Icy Wind,Shadow Ball,4,5,5,75000
+Gardevoir,76.2,psychic,fairy,137.2,114.5,104,1633015,18,Charm,Synchronoise,Shadow Ball,9,10,5,75000
+Skrelp,76.1,poison,water,104.2,104.2,127,1378846,50,Water Gun,Aqua Tail,Sludge Bomb,12,17,3,50000
+Whimsicott,76.1,grass,fairy,118.4,133.1,119,1875239,27.5,Charm,Moonblast,Hurricane,10,11,1,10000
+Venomoth,75.5,bug,poison,128.2,104.4,131,1752985,27.5,Confusion,Poison Fang,Psychic,3,5,3,50000
+Venomoth (Shadow),75.5,bug,poison,128.2,104.4,131,1752985,27.5,Confusion,Poison Fang,Psychic,3,5,3,50000
+Honchkrow (Shadow),75.4,dark,flying,150.6,68.3,145,1492462,20.5,Snarl,Brave Bird,Sky Attack,5,4,3,50000
+Raticate (Alolan),75,dark,normal,107.5,130.7,148,2078413,37,Quick Attack,Crunch,Hyper Fang,7,8,1,10000
+Roserade,75,grass,poison,143.1,114.9,95,1561844,18.5,Poison Jab,Weather Ball (Fire),Sludge Bomb,5,8,3,50000
+Linoone (Galarian),74.8,dark,normal,114.6,112.2,152,1953755,39,Snarl,Body Slam,Gunk Shot,3,6,1,10000
+Venusaur,74.2,grass,poison,122.5,121.9,122,1820851,20,Vine Whip,Frenzy Plant,Sludge Bomb,6,7,3,10000
+Armaldo (Shadow),74,rock,bug,133.3,110.9,113,1670643,19.5,Fury Cutter,Rock Blast,Cross Poison,10,9,3,50000
+Mightyena (Shadow),74,dark,none,125.9,104.3,134,1759749,29,Fire Fang,Crunch,Poison Fang,9,7,1,10000
+Slowbro (Galarian),73.9,poison,psychic,119.1,108.4,145,1871629,22.5,Poison Jab,Psychic,Sludge Bomb,8,8,3,50000
+Weezing,73.8,poison,none,117,138.9,117,1901382,24.5,Infestation,Sludge Bomb,Shadow Ball,5,5,3,50000
+Mightyena,73.5,dark,none,125.9,104.3,134,1759749,29,Fire Fang,Crunch,Poison Fang,9,7,1,10000
+Sneasel,73.3,dark,ice,135.5,110.7,110,1649923,26.5,Ice Shard,Avalanche,Ice Punch,5,4,3,50000
+Weavile (Shadow),73.3,dark,ice,143.1,103.4,106,1568420,18.5,Snarl,Avalanche,Foul Play,4,4,3,50000
+Nidoking,73.2,poison,ground,130.1,104.1,127,1719018,21.5,Poison Jab,Earth Power,Megahorn,8,8,3,50000
+Ledian,73,bug,flying,101.9,161.2,134,2201440,49,Bug Bite,Aerial Ace,Bug Buzz,15,20,1,10000
+Vespiquen,73,bug,flying,109.1,143.3,131,2049009,28.5,Air Slash,X-Scissor,Power Gem,4,7,3,50000
+Venusaur (Shadow),72.9,grass,poison,122.5,121.9,122,1820851,20,Vine Whip,Frenzy Plant,Sludge Bomb,6,7,3,10000
+Krookodile,72.8,ground,dark,133.9,94.8,132,1675322,18.5,Snarl,Crunch,Earthquake,4,5,5,75000
+Rapidash (Galarian),72.8,psychic,fairy,134.7,110.9,111,1658326,22,Psycho Cut,Body Slam,Psychic,4,7,3,50000
+Weavile,72.8,dark,ice,143.1,103.4,106,1568420,18.5,Snarl,Avalanche,Foul Play,4,4,3,50000
+Crawdaunt,72.4,water,dark,144.5,96.9,110,1540695,22.5,Snarl,Night Slash,Crabhammer,3,4,3,50000
+Banette,72,ghost,none,146.8,89.3,117,1533076,24.5,Shadow Claw,Shadow Ball,Thunder,7,8,3,50000
+Golurk,72,ground,ghost,133.9,96.7,129,1671084,19.5,Mud Slap,Shadow Punch,Earth Power,5,7,5,75000
+Pangoro,71.9,fighting,dark,137.4,90.2,131,1623703,20,Snarl,Night Slash,Close Combat,3,4,3,50000
+Lampent,71.7,ghost,fire,133.3,97.1,130,1681422,36.5,Ember,Flame Burst,Energy Ball,10,10,5,75000
+Heracross,71.6,bug,fighting,134.7,107.9,114,1655921,17.5,Counter,Rock Blast,Megahorn,6,8,3,50000
+Sneasel (Shadow),71.6,dark,ice,135.5,110.7,110,1649923,26.5,Ice Shard,Avalanche,Ice Punch,5,4,3,50000
+Houndour,71.3,dark,fire,140.3,82.3,120,1386732,50,Ember,Flamethrower,Crunch,10,8,3,50000
+Greninja,71.2,water,dark,139.6,101.6,113,1602682,21,Bubble,Surf,Night Slash,4,4,3,10000
+Banette (Shadow),71,ghost,none,146.8,91.9,113,1524534,24.5,Shadow Claw,Shadow Ball,Thunder,7,8,3,50000
+Spiritomb,70.7,ghost,dark,121.2,146.4,104,1845420,27.5,Sucker Punch,Shadow Ball,Ominous Wind,8,7,5,75000
+Weezing (Shadow),70.2,poison,none,118.4,138.9,115,1889997,24.5,Infestation,Sludge Bomb,Shadow Ball,5,5,3,50000
+Sharpedo,70.1,water,dark,166.6,64.8,124,1338010,25.5,Waterfall,Crunch,Poison Fang,6,5,3,50000
+Sharpedo (Shadow),70.1,water,dark,166.6,64.8,124,1338010,25.5,Waterfall,Crunch,Poison Fang,6,5,3,50000
+Houndour (Shadow),69.9,dark,fire,140.3,82.3,120,1386732,50,Ember,Flamethrower,Crunch,10,8,3,50000
+Dusknoir,69.6,ghost,none,119.8,172.9,90,1864291,23.5,Hex,Shadow Ball,Psychic,5,5,3,50000
+Ivysaur,69.3,grass,poison,118.6,121.7,130,1876886,36.5,Vine Whip,Sludge Bomb,Power Whip,7,7,3,10000
+Malamar,69.2,dark,psychic,118.5,117.1,136,1887141,24,Psycho Cut,Foul Play,Superpower,5,5,3,50000
+Mismagius,69.2,ghost,none,133.8,120.8,104,1680621,21.5,Hex,Shadow Ball,Dark Pulse,5,5,3,50000
+Garbodor,68.8,poison,none,121.7,114.6,132,1842015,23.5,Infestation,Body Slam,Seed Bomb,3,4,3,50000
+Ivysaur (Shadow),68.8,grass,poison,120.3,121.1,128,1864071,37.5,Vine Whip,Sludge Bomb,Power Whip,7,7,3,10000
+Nidoking (Shadow),68.5,poison,ground,130.1,104.1,127,1719018,21.5,Poison Jab,Earth Power,Megahorn,8,8,3,50000
+Arbok,67.9,poison,none,123.7,120.1,121,1798747,29,Dragon Tail,Dark Pulse,Sludge Wave,6,8,3,50000
+Victreebel (Shadow),67.7,grass,poison,135.8,94.8,128,1648364,23,Razor Leaf,Leaf Blade,Sludge Bomb,9,13,3,50000
+Frillish,67.6,water,ghost,109.2,125.2,135,1846427,50,Hex,Ice Beam,Ominous Wind,5,4,3,50000
+Golett,66.7,ground,ghost,119.3,89.9,141,1512725,50,Mud Slap,Shadow Punch,Brick Break,5,5,5,75000
+Tentacool,66.7,water,poison,94.1,137.8,113,1465578,50,Bubble,Wrap,Bubble Beam,5,4,3,50000
+Scraggy,66.4,dark,fighting,120.4,122.1,126,1851509,48,Feint Attack,Foul Play,Brick Break,8,6,3,50000
+Klefki,66.3,steel,fairy,119,134.2,118,1884790,29.5,Astonish,Foul Play,Play Rough,5,7,3,50000
+Wormadam (Sandy),66.2,bug,ground,109.9,146.8,126,2032523,33.5,Confusion,Bug Buzz,Bulldoze,5,5,1,10000
+Gloom (Shadow),66,grass,poison,122.6,114.9,130,1830873,37.5,Razor Leaf,Sludge Bomb,Moonblast,13,15,3,50000
+Masquerain,66,bug,flying,130.3,107.8,122,1712792,24.5,Air Slash,Lunge,Air Cutter,5,7,1,10000
+Togekiss,66,fairy,flying,124.8,125.3,114,1783452,16.5,Air Slash,Aerial Ace,Flamethrower,5,7,3,50000
+Armaldo,65.8,rock,bug,133.3,110.9,113,1670643,19.5,Fury Cutter,Rock Blast,Cross Poison,10,9,3,50000
+Scyther (Shadow),65.8,bug,flying,134.9,110.7,111,1657053,20.5,Fury Cutter,Night Slash,X-Scissor,9,9,5,75000
+Shiftry (Shadow),65.8,grass,dark,134.2,87.7,142,1670632,24,Snarl,Leaf Blade,Foul Play,3,4,3,50000
+Persian (Alolan),65.4,dark,none,123,113.2,131,1823635,33,Feint Attack,Foul Play,Play Rough,8,10,3,50000
+Skorupi (Shadow),65.4,poison,bug,90.8,139.5,113,1430471,50,Poison Sting,Cross Poison,Aqua Tail,4,4,5,75000
+Togetic,65.4,fairy,flying,110.6,150,122,2023327,37,Hidden Power (Flying),Aerial Ace,Ancient Power,6,6,3,50000
+Hydreigon,65.3,dark,dragon,136.6,103.5,116,1639587,15,Dragon Breath,Dark Pulse,Dragon Pulse,17,20,5,75000
+Mismagius (Shadow),65.3,ghost,none,133.8,120.8,104,1680621,21.5,Hex,Shadow Ball,Dark Pulse,5,5,3,50000
+Krokorok,65,ground,dark,133.6,87.4,142,1658012,50,Mud Slap,Crunch,Earthquake,6,9,5,75000
+Pinsir (Shadow),64.8,bug,none,141.3,111.5,101,1591266,18.5,Fury Cutter,X-Scissor,Close Combat,9,12,5,75000
+Stunky (Shadow),64.5,poison,dark,114.3,88.2,147,1482226,50,Bite,Crunch,Flamethrower,23,28,3,50000
+Karrablast,64.2,bug,none,127.7,85.7,127,1390325,50,Fury Cutter,Drill Run,X-Scissor,12,9,3,50000
+Whirlipede,64.2,bug,poison,96.6,158,113,1725055,50,Poison Sting,Sludge Bomb,Signal Beam,6,7,1,10000
+Misdreavus (Shadow),64.1,ghost,none,124.1,119,122,1801213,29.5,Hex,Dark Pulse,Ominous Wind,5,4,3,50000
+Dusknoir (Shadow),64,ghost,none,119.8,172.9,90,1864291,23.5,Hex,Shadow Ball,Psychic,5,5,3,50000
+Ninjask,64,bug,flying,144.2,89.1,120,1541269,28,Fury Cutter,Aerial Ace,Shadow Ball,12,14,5,75000
+Vileplume,63.8,grass,poison,129.1,110.9,121,1732053,22,Razor Leaf,Sludge Bomb,Moonblast,13,15,3,50000
+Arbok (Shadow),63.7,poison,none,123.7,120.1,121,1798747,29,Dragon Tail,Dark Pulse,Sludge Wave,6,8,3,50000
+Gloom,63.6,grass,poison,122.6,114.9,130,1830873,37.5,Razor Leaf,Sludge Bomb,Moonblast,13,15,3,50000
+Shiftry,63.6,grass,dark,134.2,87.7,142,1670632,24,Snarl,Leaf Blade,Foul Play,3,4,3,50000
+Liepard,63.4,dark,none,140.9,89.3,126,1585005,31,Snarl,Dark Pulse,Play Rough,4,5,1,10000
+Victreebel,63.3,grass,poison,135.8,94.8,128,1648364,23,Razor Leaf,Leaf Blade,Sludge Bomb,9,13,3,50000
+Yanma,63.3,bug,flying,131.6,87.4,148,1702917,48.5,Wing Attack,Aerial Ace,Ancient Power,7,7,3,50000
+Murkrow,63,dark,flying,143.5,80.9,134,1554945,40.5,Feint Attack,Drill Peck,Foul Play,7,8,3,50000
+Skorupi,62.7,poison,bug,90.8,139.5,113,1430471,50,Poison Sting,Cross Poison,Aqua Tail,4,4,5,75000
+Murkrow (Shadow),62.6,dark,flying,143.5,80.9,134,1554945,40.5,Feint Attack,Drill Peck,Foul Play,7,8,3,50000
+Stunky,62.6,poison,dark,114.3,88.2,147,1482226,50,Bite,Crunch,Flamethrower,23,28,3,50000
+Koffing,62.3,poison,none,112.6,131.1,113,1667925,50,Infestation,Dark Pulse,Sludge Bomb,5,5,3,50000
+Mothim,61.9,bug,flying,140,83,137,1591422,31.5,Air Slash,Aerial Ace,Bug Buzz,5,7,1,10000
+Oddish (Shadow),61.8,grass,poison,122.7,106.7,120,1571110,50,Razor Leaf,Sludge Bomb,Seed Bomb,13,10,3,50000
+Kricketune,61.7,bug,none,127.7,88,155,1742826,38,Fury Cutter,X-Scissor,Aerial Ace,9,12,1,10000
+Amoonguss,61.6,grass,poison,110.4,102,181,2038411,27,Feint Attack,Sludge Bomb,Foul Play,9,8,3,50000
+Yanmega,61.3,bug,flying,137.3,98.3,121,1632541,18.5,Wing Attack,Aerial Ace,Ancient Power,7,7,3,50000
+Pinsir,60.7,bug,none,141.3,111.5,101,1591266,18.5,Fury Cutter,X-Scissor,Close Combat,9,12,5,75000
+Scyther,60.5,bug,flying,134.9,110.7,111,1657053,20.5,Fury Cutter,Night Slash,X-Scissor,9,9,5,75000
+Koffing (Shadow),60.3,poison,none,112.6,131.1,113,1667925,50,Infestation,Dark Pulse,Sludge Bomb,5,5,3,50000
+Hoopa,60.1,psychic,ghost,144.3,107.4,100,1549596,16,Confusion,Shadow Ball,Psychic,5,5,20,100000
+Weepinbell (Shadow),60,grass,poison,139.2,83.7,138,1606435,38.5,Bullet Seed,Sludge Bomb,Power Whip,4,4,3,50000
+Misdreavus,59.8,ghost,none,124.1,119,122,1801213,29.5,Hex,Dark Pulse,Ominous Wind,5,4,3,50000
+Roselia,59.8,grass,poison,139.6,107.3,107,1602355,30.5,Poison Jab,Sludge Bomb,Petal Blizzard,8,10,3,50000
+Oddish,58.7,grass,poison,122.7,106.7,120,1571110,50,Razor Leaf,Sludge Bomb,Seed Bomb,13,10,3,50000
+Absol,57.8,dark,none,157.9,82.7,109,1423430,22,Snarl,Dark Pulse,Megahorn,4,5,5,75000
+Leavanny,57.6,bug,grass,131,109,120,1713215,22,Bug Bite,Leaf Blade,X-Scissor,12,12,1,10000
+Mr. Mime,57.6,psychic,fairy,132.2,145.7,88,1695360,25.5,Confusion,Psychic,Shadow Ball,5,5,5,75000
+Runerigus,57.2,ground,ghost,112.2,168.3,106,2002086,25,Astonish,Shadow Ball,Sand Tomb,7,5,3,50000
+Nuzleaf (Shadow),56,grass,dark,125.2,78.1,157,1536164,50,Feint Attack,Leaf Blade,Foul Play,6,8,3,50000
+Parasect,55.8,bug,grass,124.2,118.3,122,1792012,30.5,Fury Cutter,X-Scissor,Cross Poison,9,9,3,50000
+Weepinbell,55.8,grass,poison,137.8,84.3,139,1614019,39.5,Bullet Seed,Sludge Bomb,Power Whip,4,4,3,50000
+Absol (Shadow),55.4,dark,none,157.9,82.7,109,1423430,22,Snarl,Dark Pulse,Megahorn,4,5,5,75000
+Butterfree,55.4,bug,flying,126.7,111.9,124,1757032,31.5,Confusion,Psychic,Signal Beam,5,5,1,10000
+Wormadam (Plant),55.3,bug,grass,109.9,146.8,126,2032523,33.5,Confusion,Bug Buzz,Energy Ball,5,5,1,10000
+Volbeat,55.1,bug,none,111.1,136.8,132,2005636,34,Struggle Bug,Thunderbolt,Signal Beam,7,7,3,50000
+Nuzleaf,54.4,grass,dark,125.2,78.1,157,1536164,50,Feint Attack,Leaf Blade,Foul Play,6,8,3,50000
+Snubbull (Shadow),54.4,fairy,none,127.7,84,142,1524055,50,Bite,Crunch,Brick Break,23,18,3,50000
+Weezing (Galarian),54.4,poison,fairy,118.4,138.9,115,1889997,24.5,Tackle,Overheat,Sludge,28,20,3,50000
+Bulbasaur (Shadow),54.3,grass,poison,111.8,105.9,120,1419947,50,Vine Whip,Sludge Bomb,Power Whip,7,7,3,10000
+Swadloon,54,bug,grass,106.7,147.9,133,2099118,50,Bug Bite,Energy Ball,Bug Buzz,19,20,1,10000
+Bulbasaur,52.6,grass,poison,111.8,105.9,120,1419947,50,Vine Whip,Sludge Bomb,Power Whip,7,7,3,10000
+Illumise,51.9,bug,none,111.1,136.8,132,2005636,34,Struggle Bug,Bug Buzz,Silver Wind,8,6,3,50000
+Snubbull,51.8,fairy,none,127.7,84,142,1524055,50,Bite,Crunch,Brick Break,23,18,3,50000
+Anorith (Shadow),49.8,rock,bug,147,92.1,113,1529912,43.5,Struggle Bug,Cross Poison,Ancient Power,5,6,3,50000
+Anorith,48.4,rock,bug,147,92.1,113,1529912,43.5,Struggle Bug,Cross Poison,Ancient Power,5,6,3,50000
+Pineco,47.5,bug,none,103.4,115.1,127,1511117,50,Bug Bite,Rock Tomb,Gyro Ball,20,20,5,75000
+Vileplume (Shadow),46,grass,poison,129.1,110.9,121,1732053,22,Acid,Sludge Bomb,Moonblast,10,12,3,50000
+Beautifly,45,bug,flying,146.4,81.9,128,1535506,34.5,Infestation,Air Cutter,Bug Buzz,5,5,1,10000
+Swirlix,44.2,fairy,none,104.2,112.6,145,1701231,50,Tackle,Draining Kiss,Energy Ball,28,28,3,50000
+Cacturne,44.1,grass,dark,148.9,83.5,121,1505536,23.5,Poison Jab,Dark Pulse,Grass Knot,8,8,3,50000
+Clefairy,44.1,fairy,none,102.5,103.4,157,1663540,50,Zen Headbutt,Body Slam,Disarming Voice,6,8,1,10000
+Pineco (Shadow),42.4,bug,none,103.4,115.1,127,1511117,50,Bug Bite,Rock Tomb,Gyro Ball,20,20,5,75000
+Accelgor,42,bug,none,143.2,84.3,129,1556853,22.5,Infestation,Signal Beam,Focus Blast,5,7,3,50000
