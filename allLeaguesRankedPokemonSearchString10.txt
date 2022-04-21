@@ -5,6 +5,10 @@ Result for league: ELx
  
 580,1,546,37,43,152,406,170
 
+Result for league: JJx
+ 
+546,618,40,451,334,616,113,560,227
+
 Result for league: GLx
  
 379,308,709,365,618,560,260,334,68
@@ -20,6 +24,10 @@ Result for league: RLx
 Result for league: KLx
  
 108,31,113,18,143,15,28,97
+
+Result for league: HWx
+ 
+630,42,184,31,15,38,413,558,593
 
 Result for league: ULx
  
