@@ -4,14 +4,14 @@ import pokemonMatch as match
 thisLeague = 'great'
 pvpTopX = 100
 # ,'HWx','MXx'
-setDataTopXGreatRank  = setDataTopXRank[['Pokemon', '#', 'GLx', 'XGx', 'RLx', 'KLx', 'HWx', 'SumRank', 'Best', 'BestNo']].copy()
+setDataTopXGreatRank  = setDataTopXRank[['Pokemon', '#', 'GLx', 'XGx', 'RLx', 'KLx', 'HWx', 'FLx', 'SumRank', 'Best', 'BestNo']].copy()
 
 # drop nans if all columns are nan
-setDataTopXGreatRank = setDataTopXGreatRank.dropna(how='all',subset=['GLx', 'XGx', 'RLx', 'KLx', 'HWx'])
+setDataTopXGreatRank = setDataTopXGreatRank.dropna(how='all',subset=['GLx', 'XGx', 'RLx', 'KLx', 'HWx', 'FLx'])
 setDataTopXGreatRank = setDataTopXGreatRank.reset_index(drop=True)
                                          
 # reindex sumrank
-setDataTopXGreatRank['SumRank'] = setDataTopXGreatRank.loc[:,['GLx','XGx','RLx','KLx','HWx']].sum(axis=1)
+setDataTopXGreatRank['SumRank'] = setDataTopXGreatRank.loc[:,['GLx','XGx','RLx','KLx','HWx','FLx']].sum(axis=1)
 #colsToOperate = setDataTopXGreatRank.columns[2:-3]
 #setDataTopXGreatRank.drop_duplicates(subset=colsToOperate,inplace=True, keep='first')
  
@@ -23,7 +23,7 @@ setDataTopXGreatRank  = match.whichLeagues(setDataTopXGreatRank ,thisLeague,pvpT
                                 
 # ugh, this is so hacky. Forcing the html formats to behave:
 # sort by rank
-rankFormats = {'#': '{:,.0f}'.format,'BestNo': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'PLx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'KLx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format,'HWx': '{:,.0f}'.format}
+rankFormats = {'#': '{:,.0f}'.format,'BestNo': '{:,.0f}'.format,'SumRank': '{:,.0f}'.format,'GLx': '{:,.0f}'.format,'ULx': '{:,.0f}'.format,'PLx': '{:,.0f}'.format,'MLx': '{:,.0f}'.format,'RLx': '{:,.0f}'.format,'XGx': '{:,.0f}'.format,'KLx': '{:,.0f}'.format,'CLx': '{:,.0f}'.format,'HWx': '{:,.0f}'.format,'FLx': '{:,.0f}'.format}
 rankStringTable = setDataTopXGreatRank.to_html(classes="sortable", table_id="myTable", index=False, formatters=rankFormats)
 
 stringInput =  "\n<input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search table for names, moves\"> \n</input> \n"

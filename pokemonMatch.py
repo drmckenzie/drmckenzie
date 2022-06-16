@@ -771,6 +771,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     ultraFilename = 'data/ultra_overall.csv'
     masterFilename = 'data/master_overall.csv'
     retroFilename = 'data/retro_overall.csv'
+    fossilFilename = 'data/fossil_overall.csv'
      
     remixFilename = 'data/great_remix_overall.csv'
     classicFilename = 'data/master_classic_overall.csv'
@@ -787,6 +788,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     ultraData=getPvpPokeData(ultraFilename,typeFilter,topX)
     masterData=getPvpPokeData(masterFilename,typeFilter,topX)
     retroData=getPvpPokeData(retroFilename,typeFilter,topX)
+    fossilData=getPvpPokeData(fossilFilename,typeFilter,topX)
      
     remixData=getPvpPokeData(remixFilename,typeFilter,topX)
     classicData=getPvpPokeData(classicFilename,typeFilter,topX)
@@ -805,6 +807,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     ultraData = ultraData[columnList]
     masterData = masterData[columnList]
     retroData = retroData[columnList]
+    fossilData = fossilData[columnList]
     
     remixData = remixData[columnList]
     classicData = classicData[columnList]
@@ -820,6 +823,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     ultraData.rename(columns={"Score": "UL"},inplace=True)
     masterData.rename(columns={"Score": "ML"},inplace=True)
     retroData.rename(columns={"Score": "RL"},inplace=True)
+    fossilData.rename(columns={"Score": "FL"},inplace=True)
      
     remixData.rename(columns={"Score": "XG"},inplace=True)
     classicData.rename(columns={"Score": "CL"},inplace=True)
@@ -836,6 +840,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     ultraData   = addNewIndexCol(ultraData,'ULx')
     masterData  = addNewIndexCol(masterData,'MLx')
     retroData   = addNewIndexCol(retroData,'RLx')
+    fossilData  = addNewIndexCol(fossilData,'FLx')
     
     remixData   = addNewIndexCol(remixData,'XGx')
     classicData = addNewIndexCol(classicData,'CLx')
@@ -851,6 +856,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     setDataTopX=  greatData.merge(ultraData, left_on=mergeList, right_on=mergeList, how="outer")
     setDataTopX=setDataTopX.merge(masterData, left_on=mergeList, right_on=mergeList, how="outer")
     setDataTopX=setDataTopX.merge(retroData, left_on=mergeList, right_on=mergeList, how="outer")
+    setDataTopX=setDataTopX.merge(fossilData, left_on=mergeList, right_on=mergeList, how="outer")
      
     setDataTopX=setDataTopX.merge(remixData, left_on=mergeList, right_on=mergeList, how="outer")
     setDataTopX=setDataTopX.merge(classicData, left_on=mergeList, right_on=mergeList, how="outer")
@@ -867,12 +873,12 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
      
     #reorder column order:
     #setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','GL','GLx','XG','XGx','RL','RLx','UL','ULx','ML','MLx','CL','CLx'])
-    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','EL','JJ','GL','XG','RL','KL','HW','UL','PL','ML','CL','ELx','JJx','GLx','XGx','RLx','KLx','HWx','ULx','PLx','MLx','CLx'])
+    setDataTopX = setDataTopX.reindex(columns=['Pokemon','#','EL','JJ','GL','XG','RL','KL','HW','FL','UL','PL','ML','CL','ELx','JJx','GLx','XGx','RLx','KLx','HWx','FLx','ULx','PLx','MLx','CLx'])
      
     import numpy as np
      
     # rank them by usefulness
-    setDataTopX['SumRank'] = setDataTopX.loc[:,['ELx','JJx','GLx','XGx','RLx','KLx','HWx','ULx','PLx','MLx','CLx']].sum(axis=1)
+    setDataTopX['SumRank'] = setDataTopX.loc[:,['ELx','JJx','GLx','XGx','RLx','KLx','HWx','FLx','ULx','PLx','MLx','CLx']].sum(axis=1)
     setDataTopX.loc[setDataTopX['SumRank'] == 0] = np.nan
     setDataTopX.sort_values(by=['SumRank'],ascending=True,inplace=True)
      
@@ -884,6 +890,7 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     setDataTopX.loc[setDataTopX['ULx'].isna(),"ULx"] = int(999)
     setDataTopX.loc[setDataTopX['MLx'].isna(),"MLx"] = int(999)
     setDataTopX.loc[setDataTopX['RLx'].isna(),"RLx"] = int(999)
+    setDataTopX.loc[setDataTopX['FLx'].isna(),"FLx"] = int(999)
      
     setDataTopX.loc[setDataTopX['XGx'].isna(),"XGx"] = int(999)
     setDataTopX.loc[setDataTopX['CLx'].isna(),"CLx"] = int(999)
@@ -897,8 +904,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
     #dispDataTopX = setDataTopX.query('GLx <= 5' )
     #trashDataTopX = setDataTopX.query('GLx > 10')+str(pvpTopX) )
      
-    dispDataTopX  = setDataTopX.query('ELx<='+StX+' or JJx<='+StX+' or GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or KLx<='+StX+' or HWx<='+StX+' or ULx<='+StX+' or PLx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
-    trashDataTopX = setDataTopX.query('ELx>'+StX+' and JJx>'+StX+' and GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and KLx>'+StX+' and HWx>'+StX+' and ULx>'+StX+' and PLx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
+    dispDataTopX  = setDataTopX.query('ELx<='+StX+' or JJx<='+StX+' or GLx<='+StX+' or XGx<='+StX+' or RLx<='+StX+' or KLx<='+StX+' or HWx<='+StX+' or FLx<='+StX+' or ULx<='+StX+' or PLx<='+StX+' or MLx<='+StX+' or CLx<='+StX )
+    trashDataTopX = setDataTopX.query('ELx>'+StX+' and JJx>'+StX+' and GLx>'+StX+' and XGx>'+StX+' and RLx>'+StX+' and KLx>'+StX+' and HWx>'+StX+' and FLx>'+StX+' and ULx>'+StX+' and PLx>'+StX+' and MLx>'+StX+' and CLx>'+StX  )
      
     print("The score cutoff for top number of pokemon in the league is set at top: "+str(pvpTopX))
     print("")
@@ -935,6 +942,8 @@ def calculatePvpRating(typeFilter,topX,pvpTopX):
             setDataTopX.loc[i,"Best"].append("XG")
         if setDataTopX.loc[i,"RLx"]<pvpTopX:
             setDataTopX.loc[i,"Best"].append("RL")
+        if setDataTopX.loc[i,"FLx"]<pvpTopX:
+            setDataTopX.loc[i,"Best"].append("FL")
         if setDataTopX.loc[i,"KLx"]<pvpTopX:
             setDataTopX.loc[i,"Best"].append("KL")
         if setDataTopX.loc[i,"HWx"]<pvpTopX:
@@ -994,6 +1003,8 @@ def whichLeagues(setDataTopX,thisLeague,pvpTopX):
                 setDataTopX.loc[i,"Best"].append("KL")
             if setDataTopX.loc[i,"HWx"]<pvpTopX:
                 setDataTopX.loc[i,"Best"].append("HW")
+            if setDataTopX.loc[i,"FLx"]<pvpTopX:
+                setDataTopX.loc[i,"Best"].append("FL")
         if thisLeague=='ultra':        
             if setDataTopX.loc[i,"ULx"]<pvpTopX:
                 setDataTopX.loc[i,"Best"].append("UL")

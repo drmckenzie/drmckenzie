@@ -806,6 +806,95 @@
 720,HoopaHoopa Confined,HoopaHoopa Confined (Shadow),HoopaHoopa Confined (XL),720,Psychic,Ghost,600,80,110,60,150,130,70,6,TRUE,TRUE
 720,HoopaHoopa Unbound,HoopaHoopa Unbound (Shadow),HoopaHoopa Unbound (XL),720,Psychic,Dark,680,80,160,60,170,130,80,6,TRUE,TRUE
 721,Volcanion,Volcanion (Shadow),Volcanion (XL),721,Fire,Water,600,80,110,120,130,90,70,6,TRUE,TRUE
+722,Rowlet,Rowlet (Shadow),Rowlet (XL),722,Grass,Flying,,,,,,,,,,TRUE
+723,Dartrix,Dartrix,Dartrix (XL),723,Grass,Flying,,,,,,,,,,TRUE
+724,Decidueye,Decidueye,Decidueye (XL),724,Grass,Ghost,,,,,,,,,,TRUE
+725,Litten,Litten,Litten (XL),725,Fire,,,,,,,,,,,TRUE
+726,Torracat,Torracat,Torracat (XL),726,Fire,,,,,,,,,,,TRUE
+727,Incineroar,Incineroar,Incineroar (XL),727,Fire,Dark,,,,,,,,,,TRUE
+728,Popplio,Popplio,Popplio (XL),728,Water,,,,,,,,,,,TRUE
+729,Brionne,Brionne,Brionne (XL),729,Water,,,,,,,,,,,TRUE
+730,Primarina,Primarina,Primarina (XL),730,Water,Fairy,,,,,,,,,,TRUE
+731,Pikipek,Pikipek,Pikipek (XL),731,Normal,Flying,,,,,,,,,,TRUE
+732,Trumbeak,Trumbeak,Trumbeak (XL),732,Normal,Flying,,,,,,,,,,TRUE
+733,Toucannon,Toucannon,Toucannon (XL),733,Normal,Flying,,,,,,,,,,TRUE
+734,Yungoos,Yungoos,Yungoos (XL),734,Normal,,,,,,,,,,,TRUE
+735,Gumshoos,Gumshoos,Gumshoos (XL),735,Normal,,,,,,,,,,,TRUE
+736,Grubbin,Grubbin,Grubbin (XL),736,Bug,,,,,,,,,,,FALSE
+737,Charjabug,Charjabug,Charjabug (XL),737,Bug,Electric,,,,,,,,,,FALSE
+738,Vikavolt,Vikavolt,Vikavolt (XL),738,Bug,Electric,,,,,,,,,,FALSE
+739,Crabrawler,Crabrawler,Crabrawler (XL),739,Fighting,,,,,,,,,,,FALSE
+740,Crabominable,Crabominable,Crabominable (XL),740,Fighting,Ice,,,,,,,,,,FALSE
+741,Oricorio,Oricorio,Oricorio (XL),741,Fire,Flying,,,,,,,,,,TRUE
+741,Oricorio,Oricorio,Oricorio (XL),741,Electric,Flying,,,,,,,,,,TRUE
+741,Oricorio,Oricorio,Oricorio (XL),741,Psychic,Flying,,,,,,,,,,TRUE
+741,Oricorio,Oricorio,Oricorio (XL),741,Ghost,Flying,,,,,,,,,,TRUE
+742,Cutiefly,Cutiefly,Cutiefly (XL),742,Bug,Fairy,,,,,,,,,,FALSE
+743,Ribombee,Ribombee,Ribombee (XL),743,Bug,Fairy,,,,,,,,,,FALSE
+744,Rockruff,Rockruff,Rockruff (XL),744,Rock,,,,,,,,,,,TRUE
+745,Lycanroc,Lycanroc,Lycanroc (XL),745,Rock,,,,,,,,,,,TRUE
+746,Wishiwashi,Wishiwashi,Wishiwashi (XL),746,Water,,,,,,,,,,,FALSE
+747,Mareanie,Mareanie,Mareanie (XL),747,Poison,Water,,,,,,,,,,FALSE
+748,Toxapex,Toxapex,Toxapex (XL),748,Poison,Water,,,,,,,,,,FALSE
+749,Mudbray,Mudbray,Mudbray (XL),749,Ground,,,,,,,,,,,FALSE
+750,Mudsdale,Mudsdale,Mudsdale (XL),750,Ground,,,,,,,,,,,FALSE
+751,Dewpider,Dewpider,Dewpider (XL),751,Water,Bug,,,,,,,,,,TRUE
+752,Araquanid,Araquanid,Araquanid (XL),752,Water,Bug,,,,,,,,,,TRUE
+753,Fomantis,Fomantis,Fomantis (XL),753,Grass,,,,,,,,,,,TRUE
+754,Lurantis,Lurantis,Lurantis (XL),754,Grass,,,,,,,,,,,TRUE
+755,Morelull,Morelull,Morelull (XL),755,Grass,Fairy,,,,,,,,,,FALSE
+756,Shiinotic,Shiinotic,Shiinotic (XL),756,Grass,Fairy,,,,,,,,,,FALSE
+757,Salandit,Salandit,Salandit (XL),757,Poison,Fire,,,,,,,,,,TRUE
+758,Salazzle,Salazzle,Salazzle (XL),758,Poison,Fire,,,,,,,,,,TRUE
+759,Stufful,Stufful,Stufful (XL),759,Normal,Fighting,,,,,,,,,,TRUE
+760,Bewear,Bewear,Bewear (XL),760,Normal,Fighting,,,,,,,,,,TRUE
+761,Bounsweet,Bounsweet,Bounsweet (XL),761,Grass,,,,,,,,,,,FALSE
+762,Steenee,Steenee,Steenee (XL),762,Grass,,,,,,,,,,,FALSE
+763,Tsareena,Tsareena,Tsareena (XL),763,Grass,,,,,,,,,,,FALSE
+764,Comfey,Comfey,Comfey (XL),764,Fairy,,,,,,,,,,,FALSE
+765,Oranguru,Oranguru,Oranguru (XL),765,Normal,Psychic,,,,,,,,,,TRUE
+766,Passimian,Passimian,Passimian (XL),766,Fighting,,,,,,,,,,,FALSE
+767,Wimpod,Wimpod,Wimpod (XL),767,Bug,Water,,,,,,,,,,TRUE
+768,Golisopod,Golisopod,Golisopod (XL),768,Bug,Water,,,,,,,,,,TRUE
+769,Sandygast,Sandygast,Sandygast (XL),769,Ghost,Ground,,,,,,,,,,FALSE
+770,Palossand,Palossand,Palossand (XL),770,Ghost,Ground,,,,,,,,,,FALSE
+771,Pyukumuku,Pyukumuku,Pyukumuku (XL),771,Water,,,,,,,,,,,FALSE
+772,Type: Null,Type: Null,Type: Null (XL),772,Normal,,,,,,,,,,,FALSE
+773,Silvally,Silvally,Silvally (XL),773,Normal,,,,,,,,,,,FALSE
+774,Minior,Minior,Minior (XL),774,Rock,Flying,,,,,,,,,,FALSE
+775,Komala,Komala,Komala (XL),775,Normal,,,,,,,,,,,FALSE
+776,Turtonator,Turtonator,Turtonator (XL),776,Fire,Dragon,,,,,,,,,,FALSE
+777,Togedemaru,Togedemaru,Togedemaru (XL),777,Electric,Steel,,,,,,,,,,FALSE
+778,Mimikyu,Mimikyu,Mimikyu (XL),778,Ghost,Fairy,,,,,,,,,,TRUE
+779,Bruxish,Bruxish,Bruxish (XL),779,Water,Psychic,,,,,,,,,,FALSE
+780,Drampa,Drampa,Drampa (XL),780,Normal,Dragon,,,,,,,,,,FALSE
+781,Dhelmise,Dhelmise,Dhelmise (XL),781,Ghost,Grass,,,,,,,,,,FALSE
+782,Jangmo-o,Jangmo-o,Jangmo-o (XL),782,Dragon,,,,,,,,,,,TRUE
+783,Hakamo-o,Hakamo-o,Hakamo-o (XL),783,Dragon,Fighting,,,,,,,,,,TRUE
+784,Kommo-o,Kommo-o,Kommo-o (XL),784,Dragon,Fighting,,,,,,,,,,TRUE
+785,Tapu Koko,Tapu Koko,Tapu Koko (XL),785,Electric,Fairy,,,,,,,,,,TRUE
+786,Tapu Lele,Tapu Lele,Tapu Lele (XL),786,Psychic,Fairy,,,,,,,,,,TRUE
+787,Tapu Bulu,Tapu Bulu,Tapu Bulu (XL),787,Grass,Fairy,,,,,,,,,,TRUE
+788,Tapu Fini,Tapu Fini,Tapu Fini (XL),788,Water,Fairy,,,,,,,,,,TRUE
+789,Cosmog,Cosmog,Cosmog (XL),789,Psychic,,,,,,,,,,,FALSE
+790,Cosmoem,Cosmoem,Cosmoem (XL),790,Psychic,,,,,,,,,,,FALSE
+791,Solgaleo,Solgaleo,Solgaleo (XL),791,Psychic,Steel,,,,,,,,,,FALSE
+792,Lunala,Lunala,Lunala (XL),792,Psychic,Ghost,,,,,,,,,,FALSE
+793,Nihilego,Nihilego,Nihilego (XL),793,Rock,Poison,,,,,,,,,,TRUE
+794,Buzzwole,Buzzwole,Buzzwole (XL),794,Bug,Fighting,,,,,,,,,,TRUE
+795,Pheromosa,Pheromosa,Pheromosa (XL),795,Bug,Fighting,,,,,,,,,,TRUE
+796,Xurkitree,Xurkitree,Xurkitree (XL),796,Electric,,,,,,,,,,,FALSE
+797,Celesteela,Celesteela,Celesteela (XL),797,Steel,Flying,,,,,,,,,,FALSE
+798,Kartana,Kartana,Kartana (XL),798,Grass,Steel,,,,,,,,,,FALSE
+799,Guzzlord,Guzzlord,Guzzlord (XL),799,Dark,Dragon,,,,,,,,,,FALSE
+800,Necrozma,Necrozma,Necrozma (XL),800,Psychic,,,,,,,,,,,FALSE
+801,Magearna,Magearna,Magearna (XL),801,Steel,Fairy,,,,,,,,,,FALSE
+802,Marshadow,Marshadow,Marshadow (XL),802,Fighting,Ghost,,,,,,,,,,FALSE
+803,Poipole,Poipole,Poipole (XL),803,Poison,,,,,,,,,,,FALSE
+804,Naganadel,Naganadel,Naganadel (XL),804,Poison,Dragon,,,,,,,,,,FALSE
+805,Stakataka,Stakataka,Stakataka (XL),805,Rock,Steel,,,,,,,,,,FALSE
+806,Blacephalon,Blacephalon,Blacephalon (XL),806,Fire,Ghost,,,,,,,,,,FALSE
+807,Zeraora,Zeraora,Zeraora (XL),807,Electric,,,,,,,,,,,FALSE
 808,Meltan,Meltan (Shadow),Meltan (XL),808,Steel,,,,,,,,,,,TRUE
 809,Melmetal,Melmetal (Shadow),Melmetal (XL),809,Steel,,,,,,,,,,,TRUE
 862,Obstagoon,Obstagoon (Shadow),Obstagoon (XL),862,Dark,Normal,,,,,,,,,,TRUE
