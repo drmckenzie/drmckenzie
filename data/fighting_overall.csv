@@ -1,0 +1,51 @@
+Pokemon,Score,Type 1,Type 2,Attack,Defense,Stamina,Stat Product,Level,Fast Move,Charged Move 1,Charged Move 2,Charged Move 1 Count,Charged Move 2 Count,Buddy Distance,Charged Move Cost
+Hakamo-o,93.9,dragon,fighting,115.5,134.8,124,1931380,36.5,Dragon Tail,Dragon Claw,Brick Break,4,4,5,75000
+Sneasler,91,fighting,poison,146,95.3,110,1529893,17,Shadow Claw,Close Combat,Aerial Ace,6,6,3,50000
+Buzzwole,89.5,bug,fighting,129.3,112.7,119,1735016,16,Counter,Superpower,Lunge,6,7,20,100000
+Hitmonchan (Shadow),88.9,fighting,none,128.2,137.3,98,1725104,23.5,Counter,Power-Up Punch,Fire Punch,5,6,5,75000
+Toxicroak,88.4,poison,fighting,136.6,91.5,131,1636876,22,Counter,Mud Bomb,Sludge Bomb,6,8,3,50000
+Kommo-o,87.2,dragon,fighting,123.7,138.4,105,1797551,16.5,Dragon Tail,Close Combat,Dragon Claw,5,4,5,75000
+Machamp (Shadow),84.6,fighting,none,136.4,97.2,124,1644073,17.5,Counter,Cross Chop,Close Combat,5,7,3,50000
+Machamp,84.5,fighting,none,136.4,97.2,124,1644073,17.5,Counter,Cross Chop,Close Combat,5,7,3,50000
+Sirfetch'd,83.1,fighting,none,145.9,107.4,98,1536689,18.5,Counter,Leaf Blade,Brave Bird,5,8,3,50000
+Throh,82.3,fighting,none,110.3,107.8,170,2020070,21.5,Zen Headbutt,Body Slam,Focus Blast,6,13,5,75000
+Sneasel (Hisuian),80.8,fighting,poison,135.5,110.7,110,1649923,26.5,Poison Jab,Close Combat,Aerial Ace,7,7,3,50000
+Farfetch'd (Galarian),80.1,fighting,none,137.9,97.8,120,1618657,36.5,Fury Cutter,Brave Bird,Leaf Blade,14,9,3,50000
+Hitmonchan,79.8,fighting,none,128.2,137.3,98,1725104,23.5,Counter,Power-Up Punch,Fire Punch,5,6,5,75000
+Machoke (Shadow),78.6,fighting,none,127.7,97.2,141,1750103,27,Karate Chop,Cross Chop,Dynamic Punch,5,7,3,50000
+Poliwrath (Shadow),78.3,water,fighting,116.5,119.7,138,1924689,22,Mud Shot,Ice Punch,Scald,5,6,3,50000
+Zapdos (Galarian),77,fighting,flying,135.2,106.2,115,1651425,15.5,Counter,Ancient Power,Brave Bird,7,8,20,100000
+Heracross,76.9,bug,fighting,134.7,107.9,114,1655921,17.5,Counter,Megahorn,Rock Blast,8,6,3,50000
+Blaziken,76.6,fire,fighting,144.4,90.8,118,1547820,19,Counter,Blaze Kick,Brave Bird,6,8,3,10000
+Primeape,76.5,fighting,none,140.2,99.2,115,1598880,24.5,Counter,Ice Punch,Close Combat,6,7,3,50000
+Combusken,75.3,fire,fighting,131,99.6,131,1710523,39,Peck,Rock Slide,Flame Charge,9,10,3,10000
+Falinks,74.8,fighting,none,128.2,119.8,113,1735815,23.5,Counter,Superpower,Megahorn,6,8,5,75000
+Hariyama (Shadow),73.9,fighting,none,125.6,75.5,186,1764581,19.5,Counter,Close Combat,Heavy Slam,7,8,3,50000
+Poliwrath,73.9,water,fighting,116.5,119.7,138,1924689,22,Mud Shot,Ice Punch,Scald,5,6,3,50000
+Hariyama,73.5,fighting,none,125.6,75.5,186,1764581,19.5,Counter,Close Combat,Heavy Slam,7,8,3,50000
+Machoke,73.3,fighting,none,127.7,97.2,141,1750103,27,Karate Chop,Cross Chop,Return,5,9,3,50000
+Hitmontop,72.2,fighting,none,121.7,151.3,100,1841514,26.5,Counter,Close Combat,Stone Edge,7,8,5,75000
+Scrafty,69.8,dark,fighting,110.4,155.4,117,2007526,24.5,Counter,Acid Spray,Power-Up Punch,7,5,3,50000
+Bewear,69.6,normal,fighting,130.4,85.6,154,1717970,18,Shadow Claw,Superpower,Stomp,5,5,1,10000
+Machop,69.6,fighting,none,127.7,81.5,157,1634495,50,Karate Chop,Cross Chop,Return,5,9,3,50000
+Sawk,69.2,fighting,none,141,99.8,113,1589415,20,Poison Jab,Body Slam,Focus Blast,5,11,5,75000
+Machop (Shadow),68.2,fighting,none,127.7,81.5,157,1634495,50,Karate Chop,Cross Chop,Brick Break,5,5,3,50000
+Pignite,68,fire,fighting,128.4,84.2,161,1740293,29.5,Ember,Flame Charge,Flamethrower,9,10,3,10000
+Monferno,67.7,fire,fighting,129.6,95.4,139,1719672,41,Ember,Flamethrower,Low Sweep,10,7,3,10000
+Lucario,66.3,fighting,steel,145.8,95.6,110,1532231,20.5,Counter,Power-Up Punch,Shadow Ball,5,8,5,75000
+Chesnaught,64.5,grass,fighting,119.9,124.6,125,1868328,19,Vine Whip,Superpower,Energy Ball,5,7,3,10000
+Emboar,62.9,fire,fighting,137.9,79.9,147,1618930,18.5,Ember,Blast Burn,Focus Blast,9,13,3,10000
+Conkeldurr,62.7,fighting,none,134.6,93.3,132,1657948,16.5,Counter,Dynamic Punch,Stone Edge,8,8,5,75000
+Breloom,62.1,grass,fighting,150.6,97.3,101,1480402,21,Counter,Dynamic Punch,Grass Knot,8,8,3,50000
+Infernape,62.1,fire,fighting,136.7,100.4,118,1619407,20.5,Fire Spin,Close Combat,Blast Burn,5,5,3,10000
+Gurdurr,62,fighting,none,124.8,99.8,143,1781718,25.5,Poison Jab,Brick Break,Stone Edge,5,8,5,75000
+Pangoro,61.9,fighting,dark,134.5,92,134,1658196,19,Bullet Punch,Close Combat,Night Slash,7,5,3,50000
+Mienshao,59.4,fighting,none,156.5,84.8,106,1407427,20,Poison Jab,Brick Break,Grass Knot,5,8,3,50000
+Stufful,53.5,normal,fighting,125.2,90.8,157,1783933,50,Tackle,Superpower,Stomp,20,20,1,10000
+Pancham,52.1,fighting,none,123.3,100.2,147,1816117,47.5,Tackle,Body Slam,Low Sweep,18,20,3,50000
+Mankey,49.7,fighting,none,137,81.5,113,1261556,50,Karate Chop,Cross Chop,Brick Break,5,5,3,50000
+Hitmonlee (Shadow),46.6,fighting,none,142.5,121.4,91,1573887,21.5,Rock Smash,Close Combat,Stomp,7,6,5,75000
+Hitmonlee,44.7,fighting,none,142.5,121.4,91,1573887,21.5,Rock Smash,Close Combat,Stomp,7,6,5,75000
+Scraggy,39.7,dark,fighting,120.4,122.1,126,1851509,48,Feint Attack,Brick Break,Foul Play,6,8,3,50000
+Timburr,37.4,fighting,none,125.2,85.7,164,1759945,50,Low Kick,Brick Break,Low Sweep,7,8,5,75000
+Mienfoo,34.8,fighting,none,143.6,93.8,116,1563337,48,Low Kick,Brick Break,Focus Blast,7,15,3,50000

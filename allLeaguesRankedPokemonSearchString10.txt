@@ -7,7 +7,7 @@ Result for league: ELx
 
 Result for league: GLx
  
-308,618,184,593,411,334,379,488,302,260
+379,709,618,260,308,108,560,334,411
 
 Result for league: XGx
  
@@ -23,7 +23,7 @@ Result for league: KLx
 
 Result for league: ULx
  
-488,460,618,379,663,487,260,208,630
+379,709,638,260,640,862,377,154,487
 
 Result for league: PLx
  
@@ -31,8 +31,8 @@ Result for league: PLx
 
 Result for league: MLx
  
-249,809,483,717,250,644,150,468,473,643
+249,149,487,383,150,644,716
 
 Result for league: CLx
  
-383,809,717,249,445,483,250,644,487,149
+383,809,250,249,717,483,445,150,644,487
