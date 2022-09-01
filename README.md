@@ -43,7 +43,8 @@ This is a series of pages that list the best moves for PvE (raids) and PvP:
 
 #### PvP combined leagues by league group
 
-- [Combined PvP league lookup by rank in Great Leagues (Great, Retro, Remix, Kanto)][PvP_leagues_rank_Great]
+- [Combined PvP league lookup by rank in Little Leagues (Element, Little Jungle)][PvP_leagues_rank_Little]
+- [Combined PvP league lookup by rank in Great Leagues (Great, Retro, Remix, Kanto, Halloween)][PvP_leagues_rank_Great]
 - [Combined PvP league lookup by rank in Ultra Leagues (Ultra, Premier)][PvP_leagues_rank_Ultra]
 - [Combined PvP league lookup by rank in Master Leagues (Master, Classic)][PvP_leagues_rank_Master]
 
@@ -77,6 +78,7 @@ This is a series of pages that list the best moves for PvE (raids) and PvP:
 [PvP_leagues]: https://drmckenzie.github.io/Top_X_pokemon_by_leagues.html
 [PvP_leagues_score]: https://drmckenzie.github.io/Top_X_pokemon_by_leagues_score.html
 [PvP_leagues_rank]: https://drmckenzie.github.io/Top_X_pokemon_by_leagues_rank.html
+[PvP_leagues_rank_little]: https://drmckenzie.github.io/Top_X_pokemon_by_Little_leagues_rank.html
 [PvP_leagues_rank_great]: https://drmckenzie.github.io/Top_X_pokemon_by_Great_leagues_rank.html
 [PvP_leagues_rank_ultra]: https://drmckenzie.github.io/Top_X_pokemon_by_Ultra_leagues_rank.html
 [PvP_leagues_rank_master]: https://drmckenzie.github.io/Top_X_pokemon_by_Master_leagues_rank.html
